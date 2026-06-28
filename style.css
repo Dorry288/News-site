@@ -1,0 +1,369 @@
+/* PALETTE: Blue (#003366), Orange (#FF6600), White (#FFFFFF) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER & LOGO STYLE */
+header {
+    background-color: #003366; /* Deep Blue */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #FF6600; /* Orange Border */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Custom Multimedia Logo: Globe + Mic + Waves */
+.custom-logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FF6600;
+}
+
+.globe-icon {
+    color: #003366;
+    font-size: 28px;
+    position: absolute;
+}
+
+.mic-icon {
+    color: #FF6600;
+    font-size: 16px;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.wave-icon {
+    color: #FF6600;
+    font-size: 14px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header h1 span {
+    color: #FF6600; /* Orange text part */
+}
+
+/* SEARCH BAR */
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 250px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #FF6600;
+    border: none;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #FF6600;
+}
+
+/* BREAKING NEWS */
+.breaking-news {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.breaking-title {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.breaking-news marquee {
+    padding: 10px;
+    font-weight: 500;
+    color: #003366;
+}
+
+/* NEWS GRID CARDS */
+h2 {
+    color: #003366;
+    margin: 30px 0 15px 0;
+    border-left: 5px solid #FF6600;
+    padding-left: 10px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.category {
+    display: inline-block;
+    padding: 3px 10px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.category.pol { background-color: #003366; }
+.category.spo { background-color: #FF6600; }
+.category.ent { background-color: #cc0066; }
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: #111;
+    font-size: 18px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #FF6600;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* MULTIMEDIA SECTION */
+.multimedia-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.podcast-box {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.podcast-box h4 {
+    color: #FF6600;
+    margin-bottom: 10px;
+}
+
+.podcast-box audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* GALLERY SECTION */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery-item p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* ABOUT & CONTACT SECTION */
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.about-box, .contact-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 5px;
+    border-top: 4px solid #FF6600;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #FF6600;
+}
+
+/* RESPONSIVE DESIGN FOR SMARTPHONES */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .search-container input {
+        width: 100%;
+    }
+    .multimedia-section, .info-section {
+        grid-template-columns: 1fr;
+    }
+}
