@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabariSphere | Digital Journalism Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome kwa ajili ya Icons za Logo na Social Media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TOP HEADER & LOGO -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo inawakilisha: Globe (globe), Microphone (microphone), na Signal Waves (rss) -->
+            <div class="custom-logo">
+                <i class="fas fa-globe globe-icon"></i>
+                <i class="fas fa-microphone mic-icon"></i>
+                <i class="fas fa-rss wave-icon"></i>
+            </div>
+            <h1>Habari<span>Sphere</span></h1>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Tafuta habari hapa...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#politics">Politics</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog/Opinion</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- BREAKING NEWS SECTION -->
+    <div class="breaking-news">
+        <span class="breaking-title">BREAKING NEWS</span>
+        <marquee behavior="scroll" direction="left">
+            Mabadiliko makubwa ya kidijitali katika tasnia ya uandishi wa habari nchini Tanzania... Teknolojia mpya ya AI yaanza kutumika vyumbani mwa habari.
+        </marquee>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="container">
+        
+        <!-- LATEST NEWS CARDS SECTION -->
+        <section id="news" class="main-news">
+            <h2><i class="fas fa-newspaper"></i> Latest News & Articles (Maandishi na Picha)</h2>
+            <div class="news-grid">
+                
+                <!-- Card 1: Politics -->
+                <article class="news-card" id="politics">
+                    <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600" alt="Siasa">
+                    <div class="card-content">
+                        <span class="category pol">Politics</span>
+                        <h3>Uchambuzi wa Siasa za Kidijitali na Ushiriki wa Vijana</h3>
+                        <p>Jinsi mitandao ya kijamii inavyobadili mfumo wa utoaji taarifa za kisiasa na namna wananchi wanavyofuatilia mijadala ya kitaifa mtandaoni.</p>
+                        <a href="#" class="read-more">Soma Zaidi</a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Sports -->
+                <article class="news-card" id="sports">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Michezo">
+                    <div class="card-content">
+                        <span class="category spo">Sports</span>
+                        <h3>Ukuaji wa E-Sports na Michezo ya Kidijitali Tanzania</h3>
+                        <p>Teknolojia inavyochochea vijana wengi kuingia kwenye michezo ya kielektroniki na fursa zilizopo katika soko la sasa la kimataifa.</p>
+                        <a href="#" class="read-more">Soma Zaidi</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Entertainment -->
+                <article class="news-card" id="entertainment">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600" alt="Burudani">
+                    <div class="card-content">
+                        <span class="category ent">Entertainment</span>
+                        <h3>Sanaa ya Digital Storytelling Inavyoteka Soko la Burudani</h3>
+                        <p>Wasanii na watayarishaji wa maudhui wanavyotumia mbinu za kisasa za kuwasilisha hadithi zao kupitia picha na sauti za kidijitali.</p>
+                        <a href="#" class="read-more">Soma Zaidi</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MULTIMEDIA: VIDEO & AUDIO SECTION -->
+        <section id="videos" class="multimedia-section">
+            <div class="video-container">
+                <h2><i class="fas fa-video"></i> Video Section (Umuhimu wa Habari Kidijitali)</h2>
+                <!-- Video ya mfano kutoka YouTube inayoelezea Digital Journalism -->
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/S_89wO33k4E" title="Digital Journalism" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="audio-container" id="blog">
+                <h2><i class="fas fa-microphone-alt"></i> Podcast / Audio Section</h2>
+                <div class="podcast-box">
+                    <h4>HabariSphere Podcast: Episode 1</h4>
+                    <p>Sikiliza majadiliano kuhusu jukumu la multimedia katika kuongeza uwazi na ukweli kwenye uandishi wa habari.</p>
+                    <!-- Audio Player ya Mfano -->
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Kivinjari chako hakisupport audio player hii.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMAGE GALLERY SECTION -->
+        <section id="gallery" class="gallery-section">
+            <h2><i class="fas fa-images"></i> Photo Gallery (Picha za Matukio)</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400" alt="Event 1"><p>Mkutano wa Waandishi</p></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="Event 2"><p>Uandishi wa Kidijitali</p></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400" alt="Event 3"><p>Mifumo ya Habari</p></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400" alt="Event 4"><p>Ulinzi wa Data/Cyber</p></div>
+            </div>
+        </section>
+
+        <!-- ABOUT & CONTACT SECTION -->
+        <section class="info-section">
+            <div class="about-box" id="about">
+                <h2>About Us</h2>
+                <p><strong>HabariSphere</strong> ni jukwaa la kisasa la kidijitali lililoanzishwa kwa lengo la kuonyesha mapinduzi ya teknolojia katika uandishi wa habari (Digital Journalism). Tunatumia maandishi, picha, sauti, na video kuwasilisha habari kwa uhakika, haraka, na kwa njia inayomvutia msomaji wa karne ya 21.</p>
+            </div>
+
+            <div class="contact-box" id="contact">
+                <h2>Contact Us</h2>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Asante! Ujumbe wako umepokelewa.');">
+                    <input type="text" placeholder="Jina Lako" required>
+                    <input type="email" placeholder="Barua Pepe" required>
+                    <textarea rows="4" placeholder="Ujumbe Wako..." required></textarea>
+                    <button type="submit">Tuma Ujumbe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2026 HabariSphere. All Rights Reserved | Digital Journalism Project</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
