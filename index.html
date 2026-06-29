@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DorryHabariSphere | Digital Journalism Portal</title>
+    <title>DorryHabariSphere | Jukwaa la Kidijitali la Habari na Maendeleo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- TOP HEADER -->
     <header>
         <div class="logo-container">
-            <img src="logo.svg" alt="DorryHabariSphere Logo" style="height: 70px; width: auto;">
+            <h1 class="site-logo">Dorry<span class="logo-accent">HabariSphere</span></h1>
         </div>
         <div class="search-container">
             <input type="text" placeholder="Tafuta habari hapa...">
@@ -19,179 +20,528 @@
         </div>
     </header>
 
+    <!-- NAVIGATION BAR -->
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#politics">Politics</a></li>
-            <li><a href="#sports">Sports</a></li>
-            <li><a href="#entertainment">Entertainment</a></li>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="index.html" class="active">Mwanzo</a></li>
+            <li><a href="#sports">Michezo</a></li>
+            <li><a href="#politics">Siasa</a></li>
+            <li><a href="#business">Biashara</a></li>
+            <li><a href="#development">Maendeleo</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#trending">Zinazovuma</a></li>
+            <li><a href="#contact">Mawasiliano</a></li>
         </ul>
     </nav>
 
+    <!-- BREAKING NEWS SECTION -->
     <div class="breaking-news">
         <span class="breaking-title">BREAKING NEWS</span>
         <marquee behavior="scroll" direction="left">
-            Mamlaka ya Udhibiti wa Nishati yaendelea kufuatilia mifumo ya gridi ya taifa baada ya changamoto ya jana ya umeme... Shirika la Reli (TRC) laeleza mikakati ya safari za SGR.
+            KOMBE LA DUNIA 2026: Mechi na Matokeo, fuatilia taarifa za moja kwa moja kutoka Amerika Kaskazini... AGIZO: Bila namba au kitambulisho cha NIDA hakuna kupewa chumba cha gesti wala uwekaji wa dharura wa AirBNB nchini...
         </marquee>
     </div>
 
     <main class="container">
         
+        <!-- TOP FEATURED HERO STORY (TEXT + GRAPHICS) -->
         <section class="hero-story-section">
             <div class="hero-card">
                 <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200" alt="Umeme Tanzania">
                 <div class="hero-overlay-content">
-                    <span class="category tech" style="background-color: #d9534f;">🔴 BREAKING REPORT</span>
-                    <small class="story-date"><i class="fas fa-calendar-alt"></i> June 27 - June 28, 2026</small>
+                    <span class="category-tag">RIPOTI YA DHARURA</span>
+                    <small class="story-date"><i class="fas fa-calendar-alt"></i> 29 Juni 2026</small>
                     <h2>GIZA LAZIMA JIJI: Changamoto ya Gridi ya Taifa ya Umeme ya Jana na Athari Zake Kidijitali</h2>
-                    <p>Uchambuzi wa kina kuhusu hitilafu ya mfumo mkuu wa umeme iliyotokea jana nchini na jinsi vyumba vya habari vya kidijitali, safari za reli ya kisasa (SGR), na biashara za e-commerce zilivyoweza kukabiliana na changamoto hiyo ya nishati nchini kote.</p>
-                    <a href="#about" class="read-more-btn">Soma Ripoti Kamili</a>
+                    <p>Uchambuzi wa kina kuhusu hitilafu ya mfumo mkuu wa umeme iliyotokea jana nchini na jinsi vyumba vya habari vya dijitali, safari za reli ya kisasa (SGR), na biashara za e-commerce zilivyoweza kukabiliana na changamoto hiyo ya nishati.</p>
                 </div>
             </div>
         </section>
 
-        <section id="news" class="main-news">
-            <h2><i class="fas fa-newspaper"></i> Makala na Habari za Sekta Zote (May - June 2026)</h2>
-            <div class="news-grid">
+        <!-- MAIN CONTENT LAYOUT (BBC STYLE) -->
+        <div class="content-wrapper">
+            
+            <!-- SEHEMU YA KUSHOTO: STORIES + MULTIMEDIA -->
+            <section class="main-content-area">
                 
-                <article class="news-card-media" id="politics">
-                    <div class="media-template-box">
-                        <span class="media-update-tag">UPDATES</span>
-                        <span class="media-date-tag">28 JUNE 2026</span>
-                        <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600" alt="Siasa">
-                        <div class="media-title-overlay">
-                            <h3>UCHAMBUZI WA SIASA ZA KIDIITALI NA USHIRIKI WA VIJANA WA IAA ARUSHA</h3>
+                <!-- SEKTA YA MICHEZO & SIASA -->
+                <h2 class="section-title" id="sports"><i class="fas fa-futbol"></i> Michezo na Siasa</h2>
+                <div class="news-grid">
+                    <article class="news-card-media">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">WORLD CUP</span>
+                            <span class="media-date-tag">29 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Soka">
+                            <div class="media-title-overlay">
+                                <h3>KOMBE LA DUNIA 2026: MASHINDANO YA HISTORIA YAZINDULIWA RASMI AMERIKA</h3>
+                            </div>
                         </div>
-                        <div class="media-follow-bar">
-                            <span>FOLLOW <i class="fab fa-instagram"></i> <i class="fab fa-tiktok"></i> @DorryHabariSphere</span>
+                        <div class="card-content-below">
+                            <p>Sherehe za ufunguzi wa Kombe la Dunia zimeanza kwa kishindo. Huu ni mchuano wa kwanza kushirikisha timu 48, huku macho ya mashabiki yakielekezwa kwenye mataifa ya Afrika yaliyofuzu kutinga hatua hiyo.</p>
                         </div>
-                    </div>
-                    <div class="card-content-below">
-                        <p>Jinsi vijana na wanahabari wanavyotumia mitandao ya kijamii kujenga mijadala ya kisiasa kuelekea uchaguzi na mabadiliko ya sera za habari.</p>
-                        <a href="#" class="read-more">Soma Zaidi</a>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="news-card-media" id="sports">
-                    <div class="media-template-box">
-                        <span class="media-update-tag">UPDATES</span>
-                        <span class="media-date-tag">20 JUNE 2026</span>
-                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Michezo">
-                        <div class="media-title-overlay">
-                            <h3>UKUAJI WA E-SPORTS NA MICHEZO YA KIDIITALI NCHINI TANZANIA</h3>
+                    <article class="news-card-media" id="politics">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">SIASA</span>
+                            <span class="media-date-tag">28 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600" alt="Siasa">
+                            <div class="media-title-overlay">
+                                <h3>UCHAGUZI: VYAMA VYA SIASA VYACHANGAMKIA MIFUMO YA DIJITALI KUVUTIA VIJANA</h3>
+                            </div>
                         </div>
-                        <div class="media-follow-bar">
-                            <span>FOLLOW <i class="fab fa-instagram"></i> <i class="fab fa-tiktok"></i> @DorryHabariSphere</span>
+                        <div class="card-content-below">
+                            <p>Ripoti maalum kuhusu jinsi siasa zinavyohamia mtandaoni. Viongozi na vyama mbalimbali sasa vinatumia majukwaa ya multimedia kufanya kampeni na kujenga ushawishi kwa kizazi cha sasa.</p>
                         </div>
-                    </div>
-                    <div class="card-content-below">
-                        <p>Teknolojia inavyochochea vijana wengi kuingia kwenye michezo ya kielektroniki na ushindani mkubwa unaoanza kujitokeza kwenye vilabu.</p>
-                        <a href="#" class="read-more">Soma Zaidi</a>
-                    </div>
-                </article>
-
-                <article class="news-card-media" id="entertainment">
-                    <div class="media-template-box">
-                        <span class="media-update-tag">UPDATES</span>
-                        <span class="media-date-tag">24 MAY 2026</span>
-                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600" alt="Burudani">
-                        <div class="media-title-overlay">
-                            <h3>SANAA YA DIGITAL STORYTELLING INAVYOTEKA SOKO LA BURUDANI</h3>
-                        </div>
-                        <div class="media-follow-bar">
-                            <span>FOLLOW <i class="fab fa-instagram"></i> <i class="fab fa-tiktok"></i> @DorryHabariSphere</span>
-                        </div>
-                    </div>
-                    <div class="card-content-below">
-                        <p>Wasanii na watayarishaji wa maudhui wanavyotumia mbinu za kisasa za kuwasilisha hadithi zao kupitia picha na sauti za kidijitali.</p>
-                        <a href="#" class="read-more">Soma Zaidi</a>
-                    </div>
-                </article>
-
-                <article class="news-card-media">
-                    <div class="media-template-box">
-                        <span class="media-update-tag">UPDATES</span>
-                        <span class="media-date-tag">10 MAY 2026</span>
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Biashara">
-                        <div class="media-title-overlay">
-                            <h3>DORRY FASHION CONNECT: MAPINDUZI YA E-COMMERCE TANZANIA</h3>
-                        </div>
-                        <div class="media-follow-bar">
-                            <span>FOLLOW <i class="fab fa-instagram"></i> <i class="fab fa-tiktok"></i> @DorryHabariSphere</span>
-                        </div>
-                    </div>
-                    <div class="card-content-below">
-                        <p>Uchambuzi maalum wa jinsi mifumo ya biashara za mtandaoni inavyorahisisha uuzaji wa mavazi ya kisasa kwa kutumia mbinu za kidijitali za masoko.</p>
-                        <a href="#" class="read-more">Soma Zaidi</a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="videos" class="multimedia-section">
-            <div class="video-container">
-                <h2><i class="fas fa-video"></i> Video Section (Umuhimu wa Habari Kidijitali)</h2>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/S_89wO33k4E" title="Digital Journalism" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
                 </div>
-            </div>
 
-            <div class="audio-container">
-                <h2><i class="fas fa-microphone-alt"></i> Podcast / Audio Section</h2>
-                <div class="podcast-box">
-                    <h4>DorryHabariSphere Podcast: Episode 1</h4>
-                    <p>Sikiliza majadiliano maalum yaliyorekodiwa na Dorica Amani kuhusu jukumu la multimedia katika kuongeza uwazi na kupunguza noise kwenye tasnia.</p>
-                    <audio controls>
-                        <source src="sauti-yangu.mp3" type="audio/mpeg">
-                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-                    </audio>
+                <!-- SEKTA YA BUSINESS & DEVELOPMENT -->
+                <h2 class="section-title" id="business"><i class="fas fa-chart-line"></i> Biashara na Maendeleo</h2>
+                <div class="news-grid">
+                    <article class="news-card-media">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">BIASHARA</span>
+                            <span class="media-date-tag">16 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600" alt="Mafuta">
+                            <div class="media-title-overlay">
+                                <h3>SOKO LA DUNIANI: BEI YA MAFUTA YASHUKA KWA KIWANGO KIKUBWA MAREKANI</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-below">
+                            <p>Ripoti kutoka soko kuu la nishati Marekani inaonyesha kushuka kwa bei ya mafuta ghafi duniani, hali inayotarajiwa kuleta nafuu ya kiuchumi kwenye mataifa yanayoendelea.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card-media" id="development">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">DEVELOPMENT</span>
+                            <span class="media-date-tag">29 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Maendeleo">
+                            <div class="media-title-overlay">
+                                <h3>HUKUMU: MENEJA WA ZAMANI WA TRA KIGOMA AFUNGWA MIAKA 20 JELA</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-below">
+                            <p>Mahakama imetoa hukumu ya miaka 20 jela kwa aliyekuwa meneja wa zamani wa Mamlaka ya Mapato Tanzania (TRA) mkoani Kigoma kufuatia makosa ya matumizi mabaya ya madaraka.</p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </section>
 
-        <section id="gallery" class="gallery-section">
-            <h2><i class="fas fa-images"></i> Photo Gallery (Picha za Matukio)</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400" alt="Event 1"><p>Mkutano wa Waandishi</p></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="Event 2"><p>Uandishi wa Kidijitali</p></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400" alt="Event 3"><p>Mifumo ya Habari</p></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400" alt="Event 4"><p>Mifumo ya Teknolojia Arusha</p></div>
-            </div>
-        </section>
+                <!-- NEW MULTIMEDIA HUB (VIDEO & AUDIO HUB) -->
+                <h2 class="section-title" id="multimedia"><i class="fas fa-play-circle"></i> Jukwaa la Multimedia (Video &amp; Audio)</h2>
+                <div class="multimedia-container">
+                    <div class="video-box">
+                        <h4>Mubashara: Uchambuzi wa Matokeo ya Kombe la Dunia</h4>
+                        <div class="iframe-wrapper">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="News Video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="audio-box">
+                        <h4>Sikiliza Muhtasari wa Habari za Asubuhi</h4>
+                        <audio controls class="custom-audio">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Kivinjari chako hakisupport audio hii.
+                        </audio>
+                    </div>
+                </div>
 
-        <section class="info-section">
-            <div class="about-box" id="about">
-                <h2>About Us</h2>
-                <p><strong>DorryHabariSphere</strong> ni jukwaa la kisasa la kidijitali lililoanzishwa na <strong>Dorica Amani (Dorry)</strong>, Mwanafunzi wa Institute of Accountancy Arusha (IAA). Lengo kuu ni kuonyesha mapinduzi ya teknolojia katika uandishi wa habari kwa kutumia maandishi, picha, sauti, na video.</p>
-            </div>
+                <!-- GUMZO MITANDAONI SECTION (KUTOKA FILI: 1000174168.jpg & 1000174169.jpg) -->
+                <div class="gumzo-section">
+                    <h3 class="gumzo-header">Gumzo mitandaoni</h3>
+                    
+                    <div class="gumzo-item">
+                        <a href="#">Mataifa 10 yenye amani zaidi barani Afrika 2026</a>
+                        <span class="gumzo-date">26 Juni 2026</span>
+                    </div>
 
-            <div class="contact-box" id="contact">
-                <h2>Contact Us / Toa Maoni</h2>
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('Asante! Maoni yako yamepokelewa kwa usalama na mhariri Dorry.');">
-                    <input type="text" placeholder="Jina Lako" required>
-                    <input type="email" placeholder="Barua Pepe" required>
-                    <textarea rows="4" placeholder="Andika maoni yako hapa kuhusu habari za leo..." required></textarea>
-                    <button type="submit">Tuma Maoni</button>
-                </form>
+                    <div class="gumzo-item">
+                        <a href="#">'Tulipoingia ndani ya bunge la Kenya tulifyatuliwa risasi'</a>
+                        <span class="gumzo-date">25 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Makubaliano ya Iran na Marekani: Kwa nini nchi za Ghuba va Uaiemi bado zina wasiwasi?</a>
+                        <span class="gumzo-date">25 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Je, ndege ya Trump ya hali ya juu ina uwezo gani?</a>
+                        <span class="gumzo-date">24 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Kwa nini uume ni kipimo muhimu cha afya ya mwanaume</a>
+                        <span class="gumzo-date">17 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Iran haiko tayari kuiacha Hezbollah nje ya makubaliano yake na Marekani, Kwa nini?</a>
+                        <span class="gumzo-date">24 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Je, wanadamu wanaweza kupata watoto katika anga za juu?</a>
+                        <span class="gumzo-date">13 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Mambo muhimu 14 waliyokubaliana Iran na Marekani</a>
+                        <span class="gumzo-date">18 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Kwanini Kim Jong-un huwa hamzungumzii mama yake?</a>
+                        <span class="gumzo-date">4 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">CCM kuna Yuda au ni homa ya urais 2030?</a>
+                        <span class="gumzo-date">3 Juni 2026</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SEHEMU YA KULIA: ZINAZOVUMA ZAIDI (KUTOKA FILE: 1000174170.jpg) -->
+            <aside id="trending" class="bbc-sidebar">
+                
+                <div class="data-save-box">
+                    <h3>Kombe la Dunia 2026 - Mechi na Matokeo</h3>
+                    <p>Pata matokeo, ratiba za mechi, magoli na wafungaji mubashara wa Kombe la Dunia 2026 sehemu moja.</p>
+                    <a href="#" class="data-btn">Fuatilia kwa Moja kwa Moja <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="bbc-news-block">
+                    <h3 class="trending-title">Zinazovuma zaidi</h3>
+                    <ol class="trending-list">
+                        <li>
+                            <a href="#">Marufuku ya mikusanyiko iliyotolewa na serikali DRC ni uamuuzi "wa kisiasa,"-Upinzani</a>
+                        </li>
+                        <li>
+                            <a href="#">Ikiwa nyoka ataingia nyumbani kwako, fanya hivi</a>
+                            <span class="update-subtext">Imeboreshwa mwisho: 29 Julai 2023</span>
+                        </li>
+                        <li>
+                            <a href="#">Kama serikali inaweza kuchapisha fedha, kwa nini ikope?</a>
+                        </li>
+                        <li>
+                            <a href="#">Dawa 6 zinazopunguza nguvu za kiume na hutumiwa sana</a>
+                            <span class="update-subtext">Imeboreshwa mwisho: 22 Julai 2022</span>
+                        </li>
+                        <li>
+                            <a href="#">Kwa nini China inaongeza silaha za nyuklia?</a>
+                        </li>
+                        <li>
+                            <a href="#">Tetesi za Soka: Arsenal yataka watano, Liverpool yatoswa na Diomande</a>
+                        </li>
+                        <li>
+                            <a href="#">Afrika yaweka rekodi Kombe la Dunia, je, safari ya kutwaa taji imekaribia?</a>
+                        </li>
+                        <li>
+                            <a href="#">Zijue nchi 10 wauzaji wakubwa wa silaha duniani</a>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- NEW CONTACT US SECTION (PROFESSIONAL LOOK) -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Wasiliana Nasi</h2>
+            <div class="contact-grid">
+                <div class="contact-card email-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Barua Pepe Rasmi</h3>
+                    <p><a href="mailto:info@dorryhabarisphere.co.tz">info@dorryhabarisphere.co.tz</a></p>
+                </div>
+                <div class="contact-card whatsapp-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Ukurasa wa WhatsApp</h3>
+                    <p><a href="https://wa.me/255700000000" target="_blank" class="whatsapp-btn">Tuma Ujumbe Sasa</a></p>
+                </div>
             </div>
         </section>
 
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer>
-        <p>&copy; 2026 DorryHabariSphere. All Rights Reserved | IAA Multimedia Project by Dorica Amani</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+        <p>&copy; 2026 DorryHabariSphere. Haki zote zimehifadhiwa | Jukwaa la Uhakika la Habari</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DorryHabariSphere | Jukwaa la Kidijitali la Habari na Maendeleo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header>
+        <div class="logo-container">
+            <h1 class="site-logo">Dorry<span class="logo-accent">HabariSphere</span></h1>
         </div>
+        <div class="search-container">
+            <input type="text" placeholder="Tafuta habari hapa...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Mwanzo</a></li>
+            <li><a href="#sports">Michezo</a></li>
+            <li><a href="#politics">Siasa</a></li>
+            <li><a href="#business">Biashara</a></li>
+            <li><a href="#development">Maendeleo</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#trending">Zinazovuma</a></li>
+            <li><a href="#contact">Mawasiliano</a></li>
+        </ul>
+    </nav>
+
+    <!-- BREAKING NEWS SECTION -->
+    <div class="breaking-news">
+        <span class="breaking-title">BREAKING NEWS</span>
+        <marquee behavior="scroll" direction="left">
+            KOMBE LA DUNIA 2026: Mechi na Matokeo, fuatilia taarifa za moja kwa moja kutoka Amerika Kaskazini... AGIZO: Bila namba au kitambulisho cha NIDA hakuna kupewa chumba cha gesti wala uwekaji wa dharura wa AirBNB nchini...
+        </marquee>
+    </div>
+
+    <main class="container">
+        
+        <!-- TOP FEATURED HERO STORY (TEXT + GRAPHICS) -->
+        <section class="hero-story-section">
+            <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200" alt="Umeme Tanzania">
+                <div class="hero-overlay-content">
+                    <span class="category-tag">RIPOTI YA DHARURA</span>
+                    <small class="story-date"><i class="fas fa-calendar-alt"></i> 29 Juni 2026</small>
+                    <h2>GIZA LAZIMA JIJI: Changamoto ya Gridi ya Taifa ya Umeme ya Jana na Athari Zake Kidijitali</h2>
+                    <p>Uchambuzi wa kina kuhusu hitilafu ya mfumo mkuu wa umeme iliyotokea jana nchini na jinsi vyumba vya habari vya dijitali, safari za reli ya kisasa (SGR), na biashara za e-commerce zilivyoweza kukabiliana na changamoto hiyo ya nishati.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT LAYOUT (BBC STYLE) -->
+        <div class="content-wrapper">
+            
+            <!-- SEHEMU YA KUSHOTO: STORIES + MULTIMEDIA -->
+            <section class="main-content-area">
+                
+                <!-- SEKTA YA MICHEZO & SIASA -->
+                <h2 class="section-title" id="sports"><i class="fas fa-futbol"></i> Michezo na Siasa</h2>
+                <div class="news-grid">
+                    <article class="news-card-media">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">WORLD CUP</span>
+                            <span class="media-date-tag">29 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Soka">
+                            <div class="media-title-overlay">
+                                <h3>KOMBE LA DUNIA 2026: MASHINDANO YA HISTORIA YAZINDULIWA RASMI AMERIKA</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-below">
+                            <p>Sherehe za ufunguzi wa Kombe la Dunia zimeanza kwa kishindo. Huu ni mchuano wa kwanza kushirikisha timu 48, huku macho ya mashabiki yakielekezwa kwenye mataifa ya Afrika yaliyofuzu kutinga hatua hiyo.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card-media" id="politics">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">SIASA</span>
+                            <span class="media-date-tag">28 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600" alt="Siasa">
+                            <div class="media-title-overlay">
+                                <h3>UCHAGUZI: VYAMA VYA SIASA VYACHANGAMKIA MIFUMO YA DIJITALI KUVUTIA VIJANA</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-below">
+                            <p>Ripoti maalum kuhusu jinsi siasa zinavyohamia mtandaoni. Viongozi na vyama mbalimbali sasa vinatumia majukwaa ya multimedia kufanya kampeni na kujenga ushawishi kwa kizazi cha sasa.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- SEKTA YA BUSINESS & DEVELOPMENT -->
+                <h2 class="section-title" id="business"><i class="fas fa-chart-line"></i> Biashara na Maendeleo</h2>
+                <div class="news-grid">
+                    <article class="news-card-media">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">BIASHARA</span>
+                            <span class="media-date-tag">16 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600" alt="Mafuta">
+                            <div class="media-title-overlay">
+                                <h3>SOKO LA DUNIANI: BEI YA MAFUTA YASHUKA KWA KIWANGO KIKUBWA MAREKANI</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-below">
+                            <p>Ripoti kutoka soko kuu la nishati Marekani inaonyesha kushuka kwa bei ya mafuta ghafi duniani, hali inayotarajiwa kuleta nafuu ya kiuchumi kwenye mataifa yanayoendelea.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card-media" id="development">
+                        <div class="media-template-box">
+                            <span class="media-update-tag">DEVELOPMENT</span>
+                            <span class="media-date-tag">29 JUNI 2026</span>
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Maendeleo">
+                            <div class="media-title-overlay">
+                                <h3>HUKUMU: MENEJA WA ZAMANI WA TRA KIGOMA AFUNGWA MIAKA 20 JELA</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-below">
+                            <p>Mahakama imetoa hukumu ya miaka 20 jela kwa aliyekuwa meneja wa zamani wa Mamlaka ya Mapato Tanzania (TRA) mkoani Kigoma kufuatia makosa ya matumizi mabaya ya madaraka.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- NEW MULTIMEDIA HUB (VIDEO & AUDIO HUB) -->
+                <h2 class="section-title" id="multimedia"><i class="fas fa-play-circle"></i> Jukwaa la Multimedia (Video &amp; Audio)</h2>
+                <div class="multimedia-container">
+                    <div class="video-box">
+                        <h4>Mubashara: Uchambuzi wa Matokeo ya Kombe la Dunia</h4>
+                        <div class="iframe-wrapper">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="News Video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="audio-box">
+                        <h4>Sikiliza Muhtasari wa Habari za Asubuhi</h4>
+                        <audio controls class="custom-audio">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Kivinjari chako hakisupport audio hii.
+                        </audio>
+                    </div>
+                </div>
+
+                <!-- GUMZO MITANDAONI SECTION (KUTOKA FILI: 1000174168.jpg & 1000174169.jpg) -->
+                <div class="gumzo-section">
+                    <h3 class="gumzo-header">Gumzo mitandaoni</h3>
+                    
+                    <div class="gumzo-item">
+                        <a href="#">Mataifa 10 yenye amani zaidi barani Afrika 2026</a>
+                        <span class="gumzo-date">26 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">'Tulipoingia ndani ya bunge la Kenya tulifyatuliwa risasi'</a>
+                        <span class="gumzo-date">25 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Makubaliano ya Iran na Marekani: Kwa nini nchi za Ghuba va Uaiemi bado zina wasiwasi?</a>
+                        <span class="gumzo-date">25 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Je, ndege ya Trump ya hali ya juu ina uwezo gani?</a>
+                        <span class="gumzo-date">24 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Kwa nini uume ni kipimo muhimu cha afya ya mwanaume</a>
+                        <span class="gumzo-date">17 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Iran haiko tayari kuiacha Hezbollah nje ya makubaliano yake na Marekani, Kwa nini?</a>
+                        <span class="gumzo-date">24 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Je, wanadamu wanaweza kupata watoto katika anga za juu?</a>
+                        <span class="gumzo-date">13 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Mambo muhimu 14 waliyokubaliana Iran na Marekani</a>
+                        <span class="gumzo-date">18 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">Kwanini Kim Jong-un huwa hamzungumzii mama yake?</a>
+                        <span class="gumzo-date">4 Juni 2026</span>
+                    </div>
+
+                    <div class="gumzo-item">
+                        <a href="#">CCM kuna Yuda au ni homa ya urais 2030?</a>
+                        <span class="gumzo-date">3 Juni 2026</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SEHEMU YA KULIA: ZINAZOVUMA ZAIDI (KUTOKA FILE: 1000174170.jpg) -->
+            <aside id="trending" class="bbc-sidebar">
+                
+                <div class="data-save-box">
+                    <h3>Kombe la Dunia 2026 - Mechi na Matokeo</h3>
+                    <p>Pata matokeo, ratiba za mechi, magoli na wafungaji mubashara wa Kombe la Dunia 2026 sehemu moja.</p>
+                    <a href="#" class="data-btn">Fuatilia kwa Moja kwa Moja <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="bbc-news-block">
+                    <h3 class="trending-title">Zinazovuma zaidi</h3>
+                    <ol class="trending-list">
+                        <li>
+                            <a href="#">Marufuku ya mikusanyiko iliyotolewa na serikali DRC ni uamuuzi "wa kisiasa,"-Upinzani</a>
+                        </li>
+                        <li>
+                            <a href="#">Ikiwa unahitaji kupendezesha nyumbani kwako, fanya hivi</a>
+                            <span </span>
+                        </li>
+                        <li>
+                            <a href="#">umuhimu wa digital katika uchumi umeleta mchango gani katika sekta hii?</a>
+                        </li>
+                        <li>
+                            <a href="#">Dawa zinazopunguza nguvu za kiume hutumiwa sana na zimeleta athari kubwa wanaume wengi</a>
+                            <span </span>
+                        </li
+                        <li>
+                            <a href="#">Kwa nini China inaongeza silaha za nyuklia?</a>
+                        </li>
+                        <li>
+                            <a href="#">Tetesi za Soka: Arsenal yataka watano, Liverpool yatoswa na Diomande</a>
+                        </li>
+                        <li>
+                            <a href="#">Afrika yaweka rekodi Kombe la Dunia, je, safari ya kutwaa taji imekaribia?</a>
+                        </li>
+                        <li>
+                            <a href="#">Zijue nchi 10 wauzaji wakubwa wa silaha duniani</a>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- NEW CONTACT US SECTION (PROFESSIONAL LOOK) -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Wasiliana Nasi</h2>
+            <div class="contact-grid">
+                <div class="contact-card email-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Barua Pepe Rasmi</h3>
+                    <p><a href="mailto:info@dorryhabarisphere.co.tz">info@dorryhabarisphere.co.tz</a></p>
+                </div>
+                <div class="contact-card whatsapp-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Ukurasa wa WhatsApp</h3>
+                    <p><a href="https://wa.me/255747488660" target="_blank" class="whatsapp-btn">Tuma Ujumbe Sasa</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2026 DorryHabariSphere. Haki zote zimehifadhiwa | Jukwaa la Uhakika la Habari</p>
     </footer>
 
 </body>
