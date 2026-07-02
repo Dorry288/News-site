@@ -3,236 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DorryHabariSphere | Jukwaa la Kidijitali la Habari na Maendeleo</title>
+    <title>HabariSphere | Jukwaa Lako la Habari na Uchambuzi wa Uhakika</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- TOP HEADER -->
+    <!-- 1. HEADER (Logo, Jina, Search Bar, na Menu) -->
     <header>
-        <div class="logo-container">
-            <h1 class="site-logo">Dorry<span class="logo-accent">HabariSphere</span></h1>
+        <div class="header-main container">
+            <div class="logo-container">
+                <h1 class="site-logo">Habari<span class="logo-accent">Sphere</span></h1>
+            </div>
+            
+            <!-- SEARCH BAR -->
+            <div class="search-container">
+                <input type="text" placeholder="Tafuta habari hapa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="Tafuta habari hapa...">
-            <button><i class="fas fa-search"></i></button>
-        </div>
+
+        <!-- MENU YA TOVUTI -->
+        <nav>
+            <ul class="container">
+                <li><a href="index.html" class="active">🏠 Home</a></li>
+                <li><a href="news.html">📰 News</a></li>
+                <li><a href="sports.html">⚽ Sports</a></li>
+                <li><a href="technology.html">💻 Technology</a></li>
+                <li><a href="about.html">ℹ️ About Us</a></li>
+                <li><a href="contact.html">📞 Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- NAVIGATION BAR -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Mwanzo</a></li>
-            <li><a href="#sports">Michezo</a></li>
-            <li><a href="#politics">Siasa</a></li>
-            <li><a href="#business">Biashara</a></li>
-            <li><a href="#development">Maendeleo</a></li>
-            <li><a href="#multimedia">Multimedia</a></li>
-            <li><a href="#trending">Zinazovuma</a></li>
-            <li><a href="#contact">Mawasiliano</a></li>
-        </ul>
-    </nav>
-
-    <!-- BREAKING NEWS SECTION -->
+    <!-- 2. BREAKING NEWS (Scrolling Ticker) -->
     <div class="breaking-news">
-        <span class="breaking-title">BREAKING NEWS</span>
-        <marquee behavior="scroll" direction="left">
-            UCHUMI KIKANDA: Benki Kuu ya Tanzania (BoT) yatoa taarifa mpya kuhusu ukuaji wa mifumo ya malipo ya kidijitali kwa robo ya kwanza ya mwaka 2026... MICHEZO: Vikosi vya timu za Afrika vyawasili Amerika Kaskazini tayari kwa michuano ya Kombe la Dunia...
-        </marquee>
+        <div class="container ticker-wrapper">
+            <span class="breaking-title">BREAKING NEWS</span>
+            <marquee behavior="scroll" direction="left">
+                🚨 TANZANIA: Gridi ya Taifa yaanza kurejea katika hali ya kawaida baada ya hitilafu kubwa... 🚨 MICHEZO: Klabu zaongeza maandalizi makali kabla ya kuanza kwa msimu mpya wa ligi...
+            </marquee>
+        </div>
     </div>
 
-    <main class="container">
+    <!-- MAIN CONTENT AREA -->
+    <main class="container content-wrapper">
         
-        <!-- TOP FEATURED HERO STORY (ETHICAL & ORIGINAL ANALYSIS) -->
-        <section class="hero-story-section">
-            <div class="hero-card">
-                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200" alt="Nishati na Teknolojia">
-                <div class="hero-overlay-content">
-                    <span class="category-tag">UFIKIRIAJI WA KIMKAKATI</span>
-                    <small class="story-date"><i class="fas fa-calendar-alt"></i> 29 Juni 2026</small>
-                    <h2>USALAMA WA NISHATI: Jinsi Vyumba vya Habari vya Kidijitali Vinavyokabiliana na Changamoto za Gridi ya Taifa</h2>
-                    <p>Uchambuzi maalum wa DorryHabariSphere kuhusu umuhimu wa mifumo mbadala ya nishati kama jua (solar) na betri za kisasa katika kulinda mawasiliano na uandishi wa habari wakati wa dharura za nishati nchini.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- MAIN CONTENT LAYOUT -->
-        <div class="content-wrapper">
+        <!-- SEHEMU YA KUSHOTO -->
+        <section class="main-content-area">
             
-            <!-- SEHEMU YA KUSHOTO: STORIES WITH INDEPENDENT TITLES -->
-            <section class="main-content-area">
-                
-                <!-- SEKTA YA MICHEZO & SIASA -->
-                <h2 class="section-title" id="sports"><i class="fas fa-futbol"></i> Michezo na Siasa</h2>
-                <div class="news-grid">
-                    <article class="news-card-media">
-                        <div class="media-template-box">
-                            <span class="media-update-tag">MICHUANO</span>
-                            <span class="media-date-tag">29 JUNI 2026</span>
-                            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Soka Duniani">
-                            <div class="media-title-overlay">
-                                <h3>KOMBE LA DUNIA 2026: MATUMAINI YA AFRIKA KATIKA MFUMO MPYA WA TIMU 48</h3>
-                            </div>
+            <!-- 3. HERO BANNER / FEATURED STORY (Habari Kubwa ya Siku) -->
+            <section class="headline-section">
+                <div class="headline-card">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200" alt="Habari Kuu ya Kitaifa">
+                    <div class="headline-overlay">
+                        <span class="meta-tag">National</span>
+                        <div class="meta-info">
+                            <span>👤 By Dorica Ngaleni</span> | 
+                            <span>📅 2 Julai 2026</span> | 
+                            <span>🕒 2 hours ago</span>
                         </div>
-                        <div class="card-content-below">
-                            <p>Huku fainali za Kombe la Dunia zikianza rasmi Amerika Kaskazini, wachambuzi wa michezo wanatathmini nafasi ya mataifa ya Afrika kufanya vizuri zaidi msimu huu kutokana na kuongezeka kwa idadi ya timu shiriki kutoka barani.</p>
-                        </div>
-                    </article>
-
-                    <article class="news-card-media" id="politics">
-                        <div class="media-template-box">
-                            <span class="media-update-tag">UCHAMBUZI</span>
-                            <span class="media-date-tag">28 JUNI 2026</span>
-                            <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600" alt="Ushawishi wa Kidijitali">
-                            <div class="media-title-overlay">
-                                <h3>MBLE ZA KIDIJIITALI: JINSI MAJUKWAA YA MULTIMEDIA YANAVYOBADILISHA KAMPENI ZA KISIASA</h3>
-                            </div>
-                        </div>
-                        <div class="card-content-below">
-                            <p>Utafiti mpya unaonyesha kuwa viongozi wengi vijana wanatumia maudhui ya video fupi na picha jongefu kujenga ushawishi wa kisiasa, na hivyo kubadilisha mitindo ya kijadi ya mikutano ya hadhara.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- SEKTA YA BUSINESS & DEVELOPMENT -->
-                <h2 class="section-title" id="business"><i class="fas fa-chart-line"></i> Biashara na Maendeleo</h2>
-                <div class="news-grid">
-                    <article class="news-card-media">
-                        <div class="media-template-box">
-                            <span class="media-update-tag">UCHUMI</span>
-                            <span class="media-date-tag">16 JUNI 2026</span>
-                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600" alt="Soko la Nishati">
-                            <div class="media-title-overlay">
-                                <h3>SOKO LA NISHATI GHAFI: MWENYEKEO WA BEI YA MAFUTA NA ATHARI ZAKE KWA WALOMBAJI WA AFRIKA MASHARIKI</h3>
-                            </div>
-                        </div>
-                        <div class="card-content-below">
-                            <p>Kushuka kwa bei ya mafuta katika masoko ya kimataifa kunatarajiwa kuleta nafuu ya gharama za usafirishaji na uzalishaji viwandani, iwapo hali hiyo itaendelea kuwa thabiti kwa miezi ijayo.</p>
-                        </div>
-                    </article>
-
-                    <article class="news-card-media" id="development">
-                        <div class="media-template-box">
-                            <span class="media-update-tag">UTAWALA BORA</span>
-                            <span class="media-date-tag">29 JUNI 2026</span>
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Usimamizi wa Sheria">
-                            <div class="media-title-overlay">
-                                <h3>MIZINGA YA SHERIA: MAPAMBANO DHIDI YA MATUMIZI MABAYA YA MADARAKA YAENDELEA KUSHIKA KASI</h3>
-                            </div>
-                        </div>
-                        <div class="card-content-below">
-                            <p>Hatua kali za kisheria zinazochukuliwa dhidi ya watumishi wa umma wanaokiuka maadili ya kazi mikoani zatajwa kuwa kichocheo kikubwa cha kuongeza uwajibikaji na kulinda mapato ya serikali.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- MULTIMEDIA HUB -->
-                <h2 class="section-title" id="multimedia"><i class="fas fa-play-circle"></i> Jukwaa la Multimedia (Video &amp; Audio)</h2>
-                <div class="multimedia-container">
-                    <div class="video-box">
-                        <h4>Uchambuzi wetu: Mustakabali wa Habari za Kidijitali 2026</h4>
-                        <div class="iframe-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="News Video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="audio-box">
-                        <h4>Podcast: Maadili ya Uandishi wa Habari Mtandaoni</h4>
-                        <audio controls class="custom-audio">
-                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-                        </audio>
+                        <h2>Tanzania Yarejesha Huduma za Umeme Baada ya Hitilafu Kubwa ya Gridi ya Taifa</h2>
+                        <p>Mafundi mitambo na wahandisi wamefanikiwa kurejesha mfumo wa usambazaji nishati kote nchini baada ya masaa kadhaa ya kukatika kwa huduma, huku uchunguzi wa kina ukianzishwa kubaini chanzo cha hitilafu hiyo kwenye gridi kuu.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
                     </div>
                 </div>
-
-                <!-- GUMZO MITANDAONI SECTION (ETHICAL REWRITING WITH CREDITS WHERE NEEDED) -->
-                <div class="gumzo-section">
-                    <h3 class="gumzo-header">Gumzo na Mijadala ya Kimataifa</h3>
-                    
-                    <div class="gumzo-item">
-                        <a href="#">Tathmini ya ripoti ya amani: Mataifa yanayoongoza kwa utulivu barani Afrika mwaka huu</a>
-                        <span class="gumzo-date">26 Juni 2026</span>
-                    </div>
-
-                    <div class="gumzo-item">
-                        <a href="#">Matukio ya Nairobi: Shuhuda na mafunzo kuhusu usalama wa majengo ya umma wakati wa dharura</a>
-                        <span class="gumzo-date">25 Juni 2026</span>
-                    </div>
-
-                    <div class="gumzo-item">
-                        <a href="#">Mabadiliko ya diplomasia ya Mashariki ya Kati na athari zake kiuchumi duniani</a>
-                        <span class="gumzo-date">25 Juni 2026</span>
-                    </div>
-
-                    <div class="gumzo-item">
-                        <a href="#">Ubunifu wa kiteknolojia: Sifa za usalama kwenye usafiri wa anga wa viongozi wakuu</a>
-                        <span class="gumzo-date">24 Juni 2026</span>
-                    </div>
-
-                    <div class="gumzo-item">
-                        <a href="#">Afya ya Uzazi: Viashiria muhimu vya afya ya mwanaume vinavyohitaji uangalizi wa daktari</a>
-                        <span class="gumzo-date">17 Juni 2026</span>
-                    </div>
-                </div>
-
             </section>
 
-            <!-- SEHEMU YA KULIA: ZINAZOVUMA ZAIDI (NEWS AGGREGATION LOOK) -->
-            <aside id="trending" class="bbc-sidebar">
+            <!-- 4. LATEST NEWS (Mifumo ya Habari 8 Zilizochambuliwa kwa Kina) -->
+            <h2 class="section-title"><span>📰 Latest News</span></h2>
+            <div class="news-portal-grid">
                 
-                <div class="data-save-box">
-                    <h3>Uchambuzi wa Spoti - DorryHabariSphere</h3>
-                    <p>Fuatilia jedwali la takwimu, ratiba, na makala maalum kutoka kwa waandishi wetu wa michezo msimu huu.</p>
-                    <a href="#" class="data-btn">Soma Makala Zaidi <i class="fas fa-chevron-right"></i></a>
-                </div>
+                <!-- Story 2: Politics -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600" alt="Siasa">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Politics</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 2 Julai 2026 | 🕒 3 hours ago</span>
+                        </div>
+                        <h3>Serikali Yasisitiza Amani na Utulivu Kabla ya Shughuli za Kisiasa Kuanza</h3>
+                        <p>Viongozi wa kitaifa wametoa wito kwa vyama vyote vya siasa na wananchi kudumisha misingi ya amani na maridhiano wakati huu nchi inapojiandaa kwa mijadala mikubwa ya kimaendeleo.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
 
-                <div class="bbc-news-block">
-                    <h3 class="trending-title">Mada Zinazovuma Zaidi</h3>
-                    <ol class="trending-list">
-                        <li>
-                            <a href="#">Hali ya kisiasa DRC: Upande wa upinzani wataka uwazi zaidi katika maamuzi ya kiserikali</a>
-                        </li>
-                        <li>
-                            <a href="#">Ushauri wa Wataalamu: Hatua za usalama pindi unapokutana na viumbe hatari nyumbani</a>
-                            <span class="update-subtext">Imeboreshwa: Juni 2026</span>
-                        </li>
-                        <li>
-                            <a href="#">Elimu ya Fedha: Jinsi mzunguko wa fedha na ukopaji wa kimkakati wa nchi unavyofanya kazi</a>
-                        </li>
-                        <li>
-                            <a href="#">Afya na Dawa: Tahadhari kuhusu matumizi ya dawa bila ushauri wa kitaalamu wa daktari</a>
-                        </li>
-                        <li>
-                            <a href="#">Ushindani wa Kijiografia: Sababu zinazofanya mataifa makubwa kuongeza bajeti za ulinzi</a>
-                        </li>
-                    </ol>
-                </div>
-            </aside>
+                <!-- Story 3: Business -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=600" alt="Biashara">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Business</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 2 Julai 2026 | 🕒 4 hours ago</span>
+                        </div>
+                        <h3>Ukuaji wa Uchumi Waendelea Kuonyesha Mwelekeo Chanya Nchini</h3>
+                        <p>Ripoti mpya ya robo ya kwanza ya mwaka inaonyesha kuimarika kwa masoko ya ndani, huku sekta za kilimo na uzalishaji viwandani zikichangia kwa kiasi kikubwa kuongeza pato la taifa.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
 
-        </div>
+                <!-- Story 4: Technology -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600" alt="Teknolojia">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Technology</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 2 Julai 2026 | 🕒 5 hours ago</span>
+                        </div>
+                        <h3>Artificial Intelligence Yaongeza Kasi na Ufanisi Katika Sekta ya Habari</h3>
+                        <p>Uchambuzi wa jinsi mifumo ya kisasa ya kijasusi ya kompyuta (AI) inavyotumiwa na vyombo vya habari kurahisisha utafsiri, uchambuzi wa data, na uandishi wa haraka wa matukio.</p>
+                        <a href="technology.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
 
-        <!-- CONTACT US SECTION -->
-        <section class="contact-section" id="contact">
-            <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Wasiliana Nasi</h2>
-            <div class="contact-grid">
-                <div class="contact-card email-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Barua Pepe Rasmi</h3>
-                    <p><a href="mailto:info@dorryhabarisphere.co.tz">info@dorryhabarisphere.co.tz</a></p>
-                </div>
-                <div class="contact-card whatsapp-card">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>Ukurasa wa WhatsApp</h3>
-                    <p><a href="https://wa.me/255700000000" target="_blank" class="whatsapp-btn">Tuma Ujumbe Sasa</a></p>
-                </div>
+                <!-- Story 5: Sports (YANGA SC ANALYSIS) -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Yanga SC">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Sports</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 2 Julai 2026 | 🕒 6 hours ago</span>
+                        </div>
+                        <h3>Klabu Zaongeza Maandalizi: Yanga SC Yafanya Uchambuzi wa Mbinu Mpya</h3>
+                        <p>Uchambuzi wa kina kutoka vyanzo vya benchi la ufundi la Yanga SC kuhusu jinsi walivyopanga mifumo mipya ya kiungo na ushambuliaji ili kuhimili mikataba na mashindano ya kimataifa.</p>
+                        <a href="sports.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Story 6: Health -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1538108149393-f159e488b3de?w=600" alt="Afya">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Health</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 1 Julai 2026 | 🕒 Jana</span>
+                        </div>
+                        <h3>Wataalamu wa Afya Waendelea Kuhimiza Uchunguzi wa Hiari wa Afya</h3>
+                        <p>Kampeni mpya ya kitaifa imezinduliwa ikihamasisha jamii kujenga tabia ya kupima afya mara kwa mara ili kuzuia magonjwa yasiyoambukiza mapema kabla hayajaleta madhara makubwa.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Story 7: Education -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="Elimu">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Education</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 1 Julai 2026 | 🕒 Jana</span>
+                        </div>
+                        <h3>Vyuo Vikuu Vinaongeza Matumizi ya Mfumo wa Kujifunza Mtandaoni</h3>
+                        <p>Mabadiliko ya kidijitali sekta ya elimu yazidi kushika kasi huku vyuo vingi nchini vikiweka mifumo dhabiti (E-learning) ili kurahisisha upatikanaji wa nyaraka na mihadhara.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Story 8: National (Sabasaba) -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=600" alt="Sabasaba">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">National</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 1 Julai 2026 | 🕒 Jana</span>
+                        </div>
+                        <h3>Maandalizi ya Maonesho ya Biashara ya Sabasaba Yafikia Hatua za Mwisho</h3>
+                        <p>Uwanja wa maonesho jijini Dar es Salaam umeanza kupokea wageni na makampuni ya ndani na nje ya nchi yanayojiandaa kuonyesha bidhaa na huduma za kipekee za kidijitali.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Story 9: Entertainment -->
+                <article class="portal-card">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600" alt="Burudani">
+                    <div class="portal-card-body">
+                        <span class="meta-tag">Entertainment</span>
+                        <div class="meta-info" style="margin: 5px 0; font-size: 11px; color:#666;">
+                            <span>👤 By Dorica Ngaleni</span><br><span>📅 30 Juni 2026 | 🕒 Juzi</span>
+                        </div>
+                        <h3>Wasanii Waendelea Kutoa Kazi Mpya za Muziki Kwenye Platforms za Kidijitali</h3>
+                        <p>Soko la muziki wa kizazi kipya nchini limezidi kupata nguvu duniani huku wasanii wakitumia mifumo ya mtandaoni kufikisha kazi zao kwa mashabiki wengi kwa muda mfupi.</p>
+                        <a href="news.html" class="read-more-btn">Read More</a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
+        <!-- 5. SIDEBAR (Trending News & Most Read) -->
+        <aside class="bbc-sidebar">
+            
+            <!-- Trending Stories (5) -->
+            <div class="sidebar-box">
+                <h3 class="sidebar-box-title">Trending Stories</h3>
+                <ol class="ranking-list">
+                    <li>
+                        <a href="technology.html">Kampuni zawekeza zaidi katika mifumo salama ya usalama wa mtandao (Cybersecurity) kujikinga na wadukuzi.</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Serikali yaendelea kuboresha na kupanua mfumo wa utoaji wa huduma za kidijitali kwa wananchi.</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Wafanyabiashara wadogo na wa kati wahimizwa kutumia mifumo ya malipo ya mtandaoni kukuza mitaji yao.</a>
+                    </li>
+                    <li>
+                        <a href="sports.html">Mashandano ya soka ya ligi mbalimbali za mikoani yaendelea kuvutia maelfu ya mashabiki viwanjani.</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Mataifa yaendelea kujadili mbinu mbadala za kukabili athari za mabadiliko ya tabianchi duniani.</a>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Most Read Stories (5) -->
+            <div class="sidebar-box">
+                <h3 class="sidebar-box-title">Most Read</h3>
+                <ol class="ranking-list">
+                    <li>
+                        <a href="news.html">Wakulima wapatiwa fursa zaidi kupitia mifumo mipya ya ununuzi na usambazaji wa mazao ya chakula.</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Viongozi mbalimbali wahimizwa kuzingatia misingi ya sheria katika uendeshaji wa mikutano ya kisiasa.</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Sekta ya utalii nchini yaendelea kuvutia wawekezaji wakubwa wa hoteli na miundombinu ya usafiri.</a>
+                    </li>
+                    <li>
+                        <a href="technology.html">Simu janja zatajwa kubadilisha namna wananchi wanavyopata na kusoma habari kila sekunde.</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Lishe bora yatajwa na wataalamu kuwa ndio nguzo muhimu zaidi katika kuzuia magonjwa sugu.</a>
+                    </li>
+                </ol>
+            </div>
+        </aside>
     </main>
 
-    <!-- FOOTER SECTION -->
+    <!-- FOOTER PLUG (Itaendelea kukamilika sehemu ya mwisho) -->
     <footer>
-        <p>&copy; 2026 DorryHabariSphere. Haki zote zimehifadhiwa | Jukwaa la Uhakika la Habari na Maendeleo</p>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 HabariSphere. By Dorica Ngaleni. All Rights Reserved.</p>
+        </div>
     </footer>
 
 </body>
 </html>
+
