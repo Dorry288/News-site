@@ -1,417 +1,851 @@
-/* ==========================================================================
-  DORRYHABARISPHERE - MASTER STYLESHEET (ORANGE, BLUE & WHITE)
-   ========================================================================== */
-
-/* 1. GENERAL RESET & FONTS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 body {
-    background-color: #f8f9fa;
+    background: #f5f7fa;
     color: #222;
     line-height: 1.6;
 }
+
+
 .container {
     width: 94%;
     max-width: 1200px;
     margin: auto;
 }
 
-/* 2. HEADER & BRANDING (DEEP BLUE & ORANGE ACCENT) */
+
+/* ================= HEADER ================= */
+
 header {
-    background-color: #0b1d33; /* Deep Blue */
+    background: #0b1d33;
     color: white;
-    border-bottom: 4px solid #ff6600; /* Orange Accent */
+    border-bottom: 5px solid #ff6600;
 }
+
+
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
 }
+
+
 .site-logo {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 900;
     letter-spacing: -1px;
 }
+
+
 .logo-accent {
-    color: #ff6600; /* Orange */
+    color: #ff6600;
 }
 
-/* SEARCH BAR */
+
+/* SEARCH */
+
 .search-container {
     display: flex;
 }
+
+
 .search-container input {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
-    outline: none;
+
     width: 280px;
-    font-size: 14px;
-}
-.search-container button {
-    background-color: #ff6600; /* Orange */
-    border: none;
-    color: white;
-    padding: 0 20px;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-}
-.search-container button:hover {
-    background-color: #cc5200;
-}
-
-/* 3. NAVIGATION MENU */
-nav {
-    background-color: #071322;
-    border-top: 1px solid rgba(255,255,255,0.05);
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-nav ul li a {
-    display: block;
-    color: #e0e6ed;
-    padding: 15px 22px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: 0.3s;
-}
-nav ul li a:hover, nav ul li a.active {
-    color: white;
-    background-color: #ff6600;
-}
-
-/* 4. BREAKING NEWS TICKER */
-.breaking-news {
-    background-color: #fff3eb; /* Light Orange Tint */
-    border-bottom: 1px solid #ffe0cc;
-    height: 42px;
-}
-.ticker-wrapper {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-.breaking-title {
-    background-color: #ff6600; /* Orange */
-    color: white;
-    padding: 0 18px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 12px;
-    white-space: nowrap;
-    letter-spacing: 0.5px;
-}
-marquee {
-    font-weight: 700;
-    font-size: 14px;
-    color: #0b1d33;
-}
-
-/* 5. MAIN LAYOUT SYSTEM */
-.content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px 0;
-}
-.main-content-area {
-    flex: 2.3;
-    min-width: 320px;
-}
-.bbc-sidebar {
-    flex: 1;
-    min-width: 290px;
-}
-
-/* SECTION HEADINGS */
-.section-title {
-    color: #0b1d33;
-    border-bottom: 3px solid #0b1d33;
-    padding-bottom: 6px;
-    margin: 35px 0 22px 0;
-    font-size: 24px;
-    font-weight: 800;
-}
-.section-title span {
-    border-bottom: 3px solid #ff6600;
-    padding-bottom: 6px;
-    margin-bottom: -9px;
-    display: inline-block;
-}
-
-/* 6. HERO / FEATURED STORIES */
-.headline-card {
-    position: relative;
-    width: 100%;
-    height: 460px;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-.headline-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.headline-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(7, 19, 34, 0.98));
-    color: white;
-    padding: 40px 30px;
-}
-.meta-tag {
-    background-color: #ff6600;
-    color: white;
-    padding: 4px 12px;
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-.meta-info {
-    display: inline-block;
-    margin-left: 12px;
-    font-size: 12px;
-    opacity: 0.85;
-}
-.headline-overlay h2 {
-    font-size: 30px;
-    margin: 14px 0;
-    font-weight: 800;
-    line-height: 1.3;
-}
-.headline-overlay p {
-    font-size: 14px;
-    opacity: 0.9;
-    margin-bottom: 20px;
-    max-width: 900px;
-}
-
-/* 7. PORTAL NEWS NEWS-GRID (8 STORIES SYSTEM) */
-.news-portal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-.portal-card {
-    background: white;
-    border: 1px solid #eef2f5;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-    display: flex;
-    flex-direction: column;
-}
-.portal-card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-.portal-card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-.portal-card-body h3 {
-    font-size: 17px;
-    color: #0b1d33;
-    margin: 8px 0;
-    font-weight: 700;
-    line-height: 1.4;
-}
-.portal-card-body p {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 15px;
-    flex-grow: 1;
-}
-
-/* GENERAL READ MORE BUTTON */
-.read-more-btn {
-    display: inline-block;
-    background-color: #ff6600;
-    color: white !important;
-    padding: 8px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    align-self: flex-start;
-}
-.read-more-btn:hover {
-    background-color: #0b1d33;
-}
-
-/* 8. SIDEBAR MECHANICS (TRENDING & MOST READ) */
-.sidebar-box {
-    background: white;
-    border: 1px solid #eef2f5;
-    padding: 22px;
-    margin-bottom: 25px;
-    border-radius: 6px;
-}
-.sidebar-box-title {
-    font-size: 18px;
-    color: #0b1d33;
-    border-left: 4px solid #ff6600;
-    padding-left: 12px;
-    margin-bottom: 18px;
-    font-weight: 700;
-}
-.ranking-list {
-    list-style: none;
-    counter-reset: rank-counter;
-}
-.ranking-list li {
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 18px;
-    border-bottom: 1px solid #f8f9fa;
-    padding-bottom: 10px;
-}
-.ranking-list li::before {
-    counter-increment: rank-counter;
-    content: counter(rank-counter);
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 26px;
-    font-weight: 900;
-    color: #ff6600;
-    opacity: 0.3;
-    line-height: 1;
-}
-.ranking-list li a {
-    color: #222;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 13.5px;
-    display: block;
-    line-height: 1.4;
-}
-.ranking-list li a:hover {
-    color: #ff6600;
-}
-
-/* 9. VIDEOS & GALLERY MULTIMEDIA LAYOUT */
-.multimedia-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-}
-.video-block {
-    background: white;
     padding: 12px;
-    border: 1px solid #eef2f5;
-    border-radius: 6px;
-}
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    margin-bottom: 10px;
-}
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
     border: none;
-    border-radius: 4px;
+    outline: none;
+
+    border-radius: 5px 0 0 5px;
 }
 
-/* GALLERY PREVIEW */
-.gallery-strip {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-}
-.gallery-card-preview img {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-.gallery-card-preview img:hover {
-    transform: scale(1.04);
-}
 
-/* 10. MASTER FOOTER SYSTEM */
-footer {
-    background-color: #0b1d33;
-    color: #b0c4de;
-    margin-top: 60px;
-    padding-top: 50px;
-    border-top: 6px solid #ff6600;
-}
-.footer-top {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-    padding-bottom: 40px;
-}
-.footer-column h3 {
+.search-container button {
+
+    background: #ff6600;
+
+    border: none;
+
     color: white;
-    font-size: 18px;
-    margin-bottom: 20px;
+
+    padding: 0 20px;
+
+    cursor: pointer;
+
+    border-radius: 0 5px 5px 0;
+
 }
-.footer-column p {
-    font-size: 13.5px;
-    line-height: 1.7;
+
+
+/* ================= NAVIGATION ================= */
+
+
+nav {
+
+    background: #071322;
+
 }
-.footer-column ul {
+
+
+nav ul {
+
     list-style: none;
-}
-.footer-column ul li {
-    margin-bottom: 10px;
-}
-.footer-column ul li a {
-    color: #b0c4de;
-    text-decoration: none;
-    font-size: 13.5px;
-}
-.footer-column ul li a:hover {
-    color: white;
-}
-.footer-bottom {
-    background-color: #071322;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 13px;
-    border-top: 1px solid rgba(255,255,255,0.05);
+
+    display: flex;
+
+    flex-wrap: wrap;
+
 }
 
-/* 11. SMART RESPONSIVE DESIGN (FOR PHONES & TABLETS) */
-@media (max-width: 992px) {
-    .content-wrapper { flex-direction: column; }
-    .main-content-area, .bbc-sidebar { width: 100%; }
+
+nav ul li a {
+
+    display: block;
+
+    padding: 15px 20px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
 }
-@media (max-width: 768px) {
-    .header-main { flex-direction: column; text-align: center; }
-    .search-container input { width: 100%; }
-    .headline-card { height: 340px; }
-    .headline-overlay h2 { font-size: 22px; }
+
+
+nav ul li a:hover,
+nav ul li a.active {
+
+    background: #ff6600;
+
+}
+
+
+
+/* ================= BREAKING NEWS ================= */
+
+
+.breaking-news {
+
+    background: #fff2e8;
+
+    height: 45px;
+
+}
+
+
+.ticker-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 100%;
+
+}
+
+
+.breaking-title {
+
+    background: #ff6600;
+
+    color: white;
+
+    height: 100%;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+}
+
+
+marquee {
+
+    color: #0b1d33;
+
+    font-weight: bold;
+
+}
+
+
+
+
+/* ================= MAIN LAYOUT ================= */
+
+
+.content-wrapper {
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 35px 0;
+
+}
+
+
+.main-content-area {
+
+    flex: 2.5;
+
+}
+
+
+.bbc-sidebar {
+
+    flex: 1;
+
+}
+
+
+
+/* ================= SECTION TITLE ================= */
+
+
+.section-title {
+
+    color: #0b1d33;
+
+    border-bottom: 3px solid #0b1d33;
+
+    margin: 35px 0 25px;
+
+    padding-bottom: 8px;
+
+    font-size: 24px;
+
+}
+
+
+.section-title span {
+
+    border-bottom: 4px solid #ff6600;
+
+    padding-bottom: 8px;
+
+} /* ================= HERO SECTION ================= */
+
+.headline-card {
+
+    position: relative;
+
+    height: 460px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.headline-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.headline-overlay {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 40px 30px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(7,19,34,0.95)
+    );
+
+}
+
+
+
+.meta-tag {
+
+    background: #ff6600;
+
+    color: white;
+
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+
+.meta-info {
+
+    font-size: 12px;
+
+    margin: 10px 0;
+
+    opacity: .8;
+
+}
+
+
+
+.headline-overlay h2 {
+
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    margin: 15px 0;
+
+}
+
+
+
+.headline-overlay p {
+
+    font-size: 15px;
+
+    max-width: 900px;
+
+}
+
+
+
+
+/* ================= NEWS CARDS ================= */
+
+
+.news-portal-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px,1fr)
+    );
+
+    gap: 25px;
+
+}
+
+
+
+
+.portal-card {
+
+    background: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+.portal-card img {
+
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+}
+
+
+
+.portal-card-body {
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
+
+}
+
+
+
+.portal-card-body h3 {
+
+    color: #0b1d33;
+
+    font-size: 18px;
+
+    margin: 10px 0;
+
+}
+
+
+
+.portal-card-body p {
+
+    color: #555;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    flex-grow: 1;
+
+}
+
+
+
+/* READ MORE BUTTON */
+
+
+.read-more-btn {
+
+    background: #ff6600;
+
+    color: white !important;
+
+    text-decoration: none;
+
+    padding: 9px 18px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    display: inline-block;
+
+    width: fit-content;
+
+}
+
+
+
+.read-more-btn:hover {
+
+    background: #0b1d33;
+
+}
+
+
+
+
+/* ================= SIDEBAR ================= */
+
+
+.sidebar-box {
+
+    background: white;
+
+    padding: 22px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+
+}
+
+
+
+.sidebar-box-title {
+
+    color: #0b1d33;
+
+    font-size: 20px;
+
+    border-left: 5px solid #ff6600;
+
+    padding-left: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.ranking-list {
+
+    list-style: none;
+
+}
+
+
+
+.ranking-list li {
+
+    margin-bottom: 15px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+
+.ranking-list a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+
+.ranking-list a:hover {
+
+    color: #ff6600;
+
+} 
+/* ================= MULTIMEDIA ================= */
+
+
+.multimedia-row {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px,1fr)
+    );
+
+    gap: 20px;
+
+}
+
+
+
+.video-block {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+
+
+.video-wrapper {
+
+    position: relative;
+
+    padding-bottom: 56.25%;
+
+    height: 0;
+
+}
+
+
+
+.video-wrapper iframe {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+}
+
+
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer {
+
+    background: #0b1d33;
+
+    color: #ddd;
+
+    margin-top: 50px;
+
+    border-top: 5px solid #ff6600;
+
+}
+
+
+
+.footer-top {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px,1fr)
+    );
+
+    gap: 40px;
+
+    padding: 40px 0;
+
+}
+
+
+
+.footer-column h3 {
+
+    color: white;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.footer-column p {
+
+    font-size: 14px;
+
+}
+
+
+
+.footer-column ul {
+
+    list-style: none;
+
+}
+
+
+
+.footer-column ul li {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.footer-column ul li a {
+
+    color: #ddd;
+
+    text-decoration: none;
+
+}
+
+
+
+.footer-column ul li a:hover {
+
+    color: #ff6600;
+
+}
+
+
+
+.footer-bottom {
+
+    background: #071322;
+
+    text-align: center;
+
+    padding: 20px 0;
+
+    font-size: 13px;
+
+}
+
+
+
+
+
+/* ================= ABOUT & CONTACT ================= */
+
+
+form input,
+form textarea {
+
+    font-size: 14px;
+
+}
+
+
+
+form button:hover {
+
+    background: #0b1d33 !important;
+
+}
+
+
+
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+
+@media(max-width:992px){
+
+    .content-wrapper{
+
+        flex-direction: column;
+
+    }
+
+
+    .main-content-area,
+    .bbc-sidebar{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .header-main{
+
+        flex-direction: column;
+
+        text-align:center;
+
+    }
+
+
+
+    .site-logo{
+
+        font-size:28px;
+
+    }
+
+
+
+    .search-container{
+
+        width:100%;
+
+    }
+
+
+
+    .search-container input{
+
+        width:100%;
+
+    }
+
+
+
+    nav ul{
+
+        flex-direction:column;
+
+    }
+
+
+
+    .headline-card{
+
+        height:350px;
+
+    }
+
+
+
+    .headline-overlay h2{
+
+        font-size:22px;
+
+    }
+
+
+
+    .headline-overlay p{
+
+        font-size:13px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .container{
+
+        width:92%;
+
+    }
+
+
+    .section-title{
+
+        font-size:20px;
+
+    }
+
+
+    .portal-card img{
+
+        height:170px;
+
+    }
+
+
 }
