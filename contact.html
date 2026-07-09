@@ -367,14 +367,16 @@ All Rights Reserved.
 
 
 
-<script>
 <script type="module">
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-import { getFirestore, collection, addDoc, getDocs, serverTimestamp } 
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
+import { 
+getFirestore, 
+collection, 
+addDoc,
+serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -396,7 +398,6 @@ measurementId: "G-09QGB510E9"
 };
 
 
-
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
@@ -407,9 +408,9 @@ const form = document.getElementById("commentForm");
 
 
 
-form.addEventListener("submit", async function(e){
+form.addEventListener("submit", async function(event){
 
-e.preventDefault();
+event.preventDefault();
 
 
 
@@ -421,25 +422,28 @@ const message = document.getElementById("message").value;
 
 
 
-await addDoc(collection(db,"comments"),{
+try {
 
-name:name,
 
-email:email,
+await addDoc(collection(db, "comments"), {
 
-message:message,
+name: name,
 
-date:new Date().toLocaleDateString("sw-TZ"),
+email: email,
 
-createdAt:serverTimestamp()
+message: message,
+
+date: new Date().toLocaleDateString("sw-TZ"),
+
+createdAt: serverTimestamp()
 
 });
 
 
 
 document.getElementById("confirmation").innerHTML =
-<p id="confirmation"></p>
-"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa na umehifadhiwa.";
+
+"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa.";
 
 
 
@@ -447,6 +451,21 @@ form.reset();
 
 
 
+} catch(error) {
+
+
+document.getElementById("confirmation").innerHTML =
+
+"❌ Imeshindikana kutuma maoni. Tafadhali jaribu tena.";
+
+
+console.log(error);
+
+
+}
+
+
 });
+
 
 </script>
