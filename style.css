@@ -441,35 +441,18 @@ marquee {
 
 
 .read-more-btn {
-
-    background: #ff6600;
-
-    color: white !important;
-
-    text-decoration: none;
-
-    padding: 9px 18px;
-
+    background: #e10600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
     border-radius: 5px;
-
-    font-weight: bold;
-
-    font-size: 13px;
-
-    display: inline-block;
-
-    width: fit-content;
-
+    cursor: pointer;
+    font-size: 16px;
 }
-
-
 
 .read-more-btn:hover {
-
-    background: #0b1d33;
-
+    opacity: 0.8;
 }
-
 
 
 
