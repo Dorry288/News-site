@@ -1,186 +1,579 @@
-<!DOCTYPE html>
-<html lang="sw">
+<!-- ANZA SEHEMU YA HABARI NDANI YA news-details.html -->
 
-<head>
+<section class="news-details-wrapper">
 
-<meta charset="UTF-8">
+    <div class="container">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="news-details-card">
 
-<title>Habari Kamili | DorryHabariSphere</title>
+            <img id="detailImage" src="" alt="Habari" class="detail-image">
 
-<link rel="stylesheet" href="style.css">
+            <div class="detail-category" id="detailCategory"></div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <h1 id="detailTitle"></h1>
 
-</head>
+            <div class="detail-meta">
+                <span id="detailDate"></span> |
+                <span id="detailAuthor"></span>
+            </div>
 
+            <div id="detailContent" class="detail-content"></div>
 
-<body>
+        </div>
 
-
-<header>
-
-<div class="header-main container">
-
-<h1 class="site-logo">
-DorryHabari<span class="logo-accent">Sphere</span>
-</h1>
-
-
-<div class="search-container">
-
-<input type="text" placeholder="Tafuta habari hapa...">
-
-<button>
-<i class="fas fa-search"></i>
-</button>
-
-</div>
-
-
-</div>
-
-
-
-<nav>
-
-<ul class="container">
-
-<li><a href="index.html">🏠 Home</a></li>
-
-<li><a href="news.html">📰 News</a></li>
-
-<li><a href="sports.html">⚽ Sports</a></li>
-
-<li><a href="technology.html">💻 Technology</a></li>
-
-<li><a href="about.html">ℹ️ About & Contact</a></li>
-
-</ul>
-
-</nav>
-
-
-</header>
-
-
-
-<div class="breaking-news">
-
-<div class="container ticker-wrapper">
-
-<span class="breaking-title">
-NEWS
-</span>
-
-
-<marquee>
-
-DorryHabariSphere - Habari za Kitaifa, Biashara na Maendeleo
-
-</marquee>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<main class="container content-wrapper">
-
-
-<section class="main-content-area">
-
-
-<article class="full-article">
-
-
-<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200" 
-alt="Umeme Tanzania"
-class="article-image">
-
-
-
-<h1>
-Umeme Wakatika Katika Mikoa Mingi Tanzania, Shughuli Za Kiuchumi Zasimama kwa Muda
-</h1>
-
-
-
-<div class="article-meta">
-
-👤 Dorica Ngaleni |
-
-📅 27 Juni 2026 |
-
-🏷 National
-
-</div>
-
-
-
-
-<p>
-Huduma ya umeme ilikatika katika maeneo mbalimbali nchini Tanzania tarehe 27 Juni 2026 baada ya kutokea changamoto katika mfumo wa gridi ya taifa.
-</p>
-
-
-
-<p>
-Kukosekana kwa huduma hiyo kuliathiri shughuli mbalimbali za wananchi, ikiwemo biashara, huduma za mawasiliano na shughuli za kijamii zilizokuwa zikitegemea nishati ya umeme.
-</p>
-
-
-
-<p>
-Baadhi ya wafanyabiashara walieleza kuwa hali hiyo iliathiri matumizi ya vifaa vya kielektroniki pamoja na shughuli za uzalishaji zinazohitaji umeme kwa muda wote.
-</p>
-
-
-
-<p>
-Wataalamu wa sekta ya nishati wanaeleza kuwa kuimarisha miundombinu ya umeme ni hatua muhimu katika kuhakikisha huduma inakuwa imara na kupunguza changamoto kama hizi.
-</p>
-
-
-
-<p>
-Mamlaka husika ziliendelea na jitihada za kurejesha huduma huku wananchi wakisubiri taarifa zaidi kuhusu hali ya mfumo wa umeme.
-</p>
-
-
-
-</article>
-
+    </div>
 
 </section>
 
 
+<style>
 
-</main>
+.news-details-wrapper{
+    padding:40px 0;
+    background:#f8f9fa;
+}
+
+.news-details-card{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.detail-image{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.detail-category{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff6600;
+    color:white;
+    padding:6px 15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.news-details-card h1{
+    color:#003366;
+    font-size:32px;
+    margin-top:20px;
+}
+
+.detail-meta{
+    color:#777;
+    margin:15px 0;
+}
+
+.detail-content{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+}
+
+.detail-content p{
+    margin-bottom:20px;
+}
+
+</style>
 
 
+<script>
 
+const newsDatabase = [
 
+{
+id:1,
 
-<footer>
+category:"Business & Development",
 
-<div class="footer-bottom container">
+title:"Tanzania Yalenga Kuimarisha Uwekezaji Kupitia Fursa za Biashara za Kimataifa",
+
+date:"8 Julai 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/sabasaba.jpg",
+
+content:`
 
 <p>
-© 2026 DorryHabariSphere | Designed by Dorica Ngaleni
+Tanzania imeendelea kutumia fursa za biashara na uwekezaji kupitia Maonesho ya Kimataifa ya Biashara Dar es Salaam maarufu kama Sabasaba.
 </p>
 
-</div>
+<p>
+Maonesho hayo yamekuwa jukwaa muhimu linalowaunganisha wafanyabiashara, wawekezaji na taasisi mbalimbali kutoka ndani na nje ya nchi.
+</p>
 
-</footer>
+<p>
+Kupitia maonesho hayo, bidhaa mbalimbali za Tanzania huoneshwa huku wafanyabiashara wakipata nafasi ya kutafuta masoko mapya na washirika wa kibiashara.
+</p>
+
+<p>
+Serikali imeendelea kuweka mazingira mazuri ya uwekezaji kwa kuboresha sera na mifumo inayorahisisha kufanya biashara nchini.
+</p>
+
+<p>
+Wataalamu wa uchumi wanaeleza kuwa uwekezaji mkubwa unaweza kuongeza ajira, uzalishaji wa bidhaa na kukuza mapato ya wananchi.
+</p>
+
+<p>
+Sekta binafsi inaendelea kuwa sehemu muhimu katika kufanikisha maendeleo ya kiuchumi kupitia ubunifu na uzalishaji.
+</p>
+
+<p>
+Kwa ujumla, juhudi za kuvutia wawekezaji zinaendelea kuwa msingi wa kuimarisha uchumi wa Tanzania.
+</p>
+
+`
+
+},
 
 
+{
+id:2,
+
+category:"National Security",
+
+title:"Ulinzi Waimarishwa Kulinda Amani na Usalama Nchini",
+
+date:"7 Julai 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/security.jpg",
+
+content:`
+
+<p>
+Vyombo vya ulinzi na usalama nchini Tanzania vimeendelea kuimarisha mikakati mbalimbali kuhakikisha amani na utulivu vinaendelea kuwepo.
+</p>
+
+<p>
+Hatua mbalimbali zimechukuliwa ikiwemo kuongeza ulinzi katika maeneo muhimu na kuimarisha ushirikiano na wananchi.
+</p>
+
+<p>
+Lengo kubwa ni kuhakikisha wananchi wanaendelea kufanya shughuli zao katika mazingira salama.
+</p>
+
+<p>
+Wananchi wameendelea kuhamasishwa kushirikiana na vyombo vya usalama kwa kutoa taarifa kuhusu changamoto zinazoweza kuhatarisha amani.
+</p>
+
+<p>
+Amani ni msingi muhimu wa maendeleo ya kijamii na kiuchumi kwa taifa lolote.
+</p>
+
+<p>
+Ushirikiano kati ya jamii na vyombo vya usalama unaendelea kuwa nguzo katika kulinda utulivu wa nchi.
+</p>
+
+`
+
+}
+
+];
+
+</script>
+,
+
+{
+id:3,
+
+category:"Technology",
+
+title:"Serikali Yaendelea Kuboresha Huduma za Kidijitali kwa Wananchi",
+
+date:"5 Julai 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/digital.jpg",
+
+content:`
+
+<p>
+Serikali imeendelea kuwekeza katika matumizi ya teknolojia ya kidijitali kwa lengo la kurahisisha upatikanaji wa huduma mbalimbali kwa wananchi.
+</p>
+
+<p>
+Mifumo ya kielektroniki imekuwa ikitumika katika maeneo mbalimbali ili kupunguza muda wa wananchi kupata huduma na kuongeza ufanisi.
+</p>
+
+<p>
+Huduma za mtandaoni zimewasaidia wananchi kupata taarifa na huduma bila kulazimika kufika moja kwa moja katika ofisi husika.
+</p>
+
+<p>
+Hatua hiyo imekuwa sehemu ya jitihada za Tanzania kuelekea uchumi wa kidijitali unaotumia teknolojia katika maendeleo.
+</p>
+
+<p>
+Wataalamu wa teknolojia wanaeleza kuwa matumizi ya mifumo salama ya kidijitali yanaweza kuongeza uwazi na uwajibikaji katika utoaji wa huduma.
+</p>
+
+<p>
+Pamoja na mafanikio hayo, bado kuna umuhimu wa kuongeza elimu ya matumizi ya teknolojia kwa wananchi.
+</p>
+
+`
+
+},
+
+
+{
+id:4,
+
+category:"National",
+
+title:"Umeme Wakatika Katika Mikoa Mingi Tanzania, Shughuli Za Kiuchumi Zasimama kwa Muda",
+
+date:"27 Juni 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/umeme.jpg",
+
+content:`
+
+<p>
+Baadhi ya maeneo nchini Tanzania yaliathirika baada ya kutokea changamoto katika mfumo wa gridi ya taifa iliyosababisha kukatika kwa huduma ya umeme.
+</p>
+
+<p>
+Hitilafu hiyo iliathiri shughuli mbalimbali za kijamii na kiuchumi ikiwemo biashara, viwanda na huduma nyingine zinazotegemea umeme.
+</p>
+
+<p>
+Wananchi walilazimika kusubiri kurejeshwa kwa huduma huku wataalamu wa nishati wakifanya kazi ya kutatua tatizo hilo.
+</p>
+
+<p>
+Umeme ni huduma muhimu katika maendeleo ya nchi kwa kuwa unasaidia uzalishaji na ukuaji wa shughuli za kiuchumi.
+</p>
+
+<p>
+Taasisi zinazohusika na nishati zimeendelea kufanya maboresho ya miundombinu ili kupunguza changamoto za kukatika kwa umeme.
+</p>
+
+<p>
+Uboreshaji wa mfumo wa nishati unaonekana kuwa muhimu katika kuhakikisha upatikanaji wa umeme wa uhakika.
+</p>
+
+`
+
+},
+
+
+{
+id:5,
+
+category:"Sports",
+
+title:"Yanga SC Yafanya Maandalizi Kabla ya Msimu Mpya wa Mashindano",
+
+date:"20 Juni 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/yanga.jpg",
+
+content:`
+
+<p>
+Klabu ya Yanga SC imeendelea kufanya maandalizi kuelekea msimu mpya wa mashindano kwa lengo la kuwa na kikosi chenye ushindani.
+</p>
+
+<p>
+Benchi la ufundi limeweka mkazo katika mazoezi ya kuongeza uwezo wa wachezaji pamoja na kuboresha mbinu za mchezo.
+</p>
+
+<p>
+Maandalizi ya timu yanahusisha programu maalumu za mazoezi, tathmini ya wachezaji na mipango ya msimu mzima.
+</p>
+
+<p>
+Mashabiki wameendelea kuipa timu hiyo matumaini makubwa kuelekea mashindano mbalimbali.
+</p>
+
+<p>
+Uongozi wa klabu unaendelea kufanya mipango ya kuhakikisha timu inakuwa na mazingira bora ya kushindana.
+</p>
+
+`
+
+},
+
+
+{
+id:6,
+
+category:"Artificial Intelligence",
+
+title:"Artificial Intelligence Yabadilisha Sekta ya Habari Katika Enzi ya Kidijitali",
+
+date:"15 Mei 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/ai.jpg",
+
+content:`
+
+<p>
+Teknolojia ya Artificial Intelligence imeendelea kubadilisha namna habari zinavyokusanywa, kuchambuliwa na kusambazwa katika enzi ya kidijitali.
+</p>
+
+<p>
+Waandishi wa habari wanatumia zana za AI kusaidia kufanya utafiti, kuchanganua taarifa na kuboresha uzalishaji wa maudhui.
+</p>
+
+<p>
+Matumizi ya teknolojia hiyo yameongeza kasi ya kazi za vyombo vya habari lakini pia yameleta mijadala kuhusu maadili.
+</p>
+
+<p>
+Wataalamu wanaeleza kuwa AI inapaswa kutumika kama chombo cha kusaidia waandishi na si kuchukua nafasi ya uamuzi wa binadamu.
+</p>
+
+<p>
+Uhakiki wa taarifa bado ni jukumu muhimu ili kuhakikisha habari zinazotolewa ni sahihi.
+</p>
+
+`
+
+}
+,
+
+{
+id:7,
+
+category:"Health",
+
+title:"Wataalamu Wahimiza Uchunguzi wa Afya Mara kwa Mara",
+
+date:"18 Aprili 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/health.jpg",
+
+content:`
+
+<p>
+Wataalamu wa afya wameendelea kutoa elimu kwa wananchi kuhusu umuhimu wa kufanya uchunguzi wa afya mara kwa mara.
+</p>
+
+<p>
+Uchunguzi wa mapema husaidia kugundua matatizo ya kiafya kabla hayajawa makubwa na kuongeza nafasi ya kupata matibabu kwa wakati.
+</p>
+
+<p>
+Wananchi wamehamasishwa kufuata taratibu za afya ikiwa ni pamoja na kupata ushauri kutoka kwa wataalamu.
+</p>
+
+<p>
+Afya bora ni msingi wa maendeleo kwa sababu mtu mwenye afya nzuri anaweza kushiriki kikamilifu katika shughuli za kijamii na kiuchumi.
+</p>
+
+<p>
+Wataalamu wameendelea kusisitiza umuhimu wa lishe bora, mazoezi na kufuatilia afya mara kwa mara.
+</p>
+
+`
+
+},
+
+
+{
+id:8,
+
+category:"Education",
+
+title:"Vyuo Vyatumia Zaidi Mifumo ya Kujifunza Mtandaoni",
+
+date:"10 Machi 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/education.jpg",
+
+content:`
+
+<p>
+Vyuo vikuu vimeendelea kutumia mifumo ya kujifunza mtandaoni ili kuongeza upatikanaji wa elimu kwa wanafunzi.
+</p>
+
+<p>
+Teknolojia imewezesha wanafunzi kupata mihadhara, vifaa vya kujifunzia na kufanya mawasiliano na walimu kwa urahisi zaidi.
+</p>
+
+<p>
+Mfumo huu umekuwa muhimu hasa kwa wanafunzi waliopo maeneo mbalimbali ambao hawawezi kufika darasani kila siku.
+</p>
+
+<p>
+Pamoja na mafanikio hayo, changamoto kama upatikanaji wa intaneti bado zinahitaji kutatuliwa.
+</p>
+
+<p>
+Matumizi ya teknolojia katika elimu yanaendelea kubadilisha mfumo wa utoaji wa maarifa katika dunia ya sasa.
+</p>
+
+`
+
+},
+
+
+{
+id:9,
+
+category:"Entertainment",
+
+title:"Sekta ya Burudani Tanzania Yazidi Kukua Kupitia Wasanii Chipukizi",
+
+date:"12 Februari 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/entertainment.jpg",
+
+content:`
+
+<p>
+Sekta ya burudani Tanzania imeendelea kukua kutokana na ongezeko la wasanii wapya na matumizi ya majukwaa ya kidijitali.
+</p>
+
+<p>
+Muziki, filamu na sanaa nyingine zimekuwa sehemu muhimu ya ajira na kukuza vipaji vya vijana.
+</p>
+
+<p>
+Mitandao ya kijamii imewapa wasanii nafasi ya kufikia mashabiki wengi zaidi ndani na nje ya nchi.
+</p>
+
+<p>
+Wadau wa burudani wanaeleza kuwa kuna umuhimu wa kuwekeza zaidi katika ubunifu na masoko ya kazi za wasanii.
+</p>
+
+`
+
+},
+
+
+{
+id:10,
+
+category:"Politics",
+
+title:"Wanasiasa Wahimiza Ushiriki wa Wananchi Katika Masuala ya Kitaifa",
+
+date:"25 Januari 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/politics.jpg",
+
+content:`
+
+<p>
+Ushiriki wa wananchi katika masuala ya kisiasa na kijamii unaendelea kupewa umuhimu katika maendeleo ya taifa.
+</p>
+
+<p>
+Viongozi mbalimbali wameendelea kusisitiza umuhimu wa wananchi kufahamu wajibu wao katika ujenzi wa nchi.
+</p>
+
+<p>
+Elimu ya uraia inaonekana kuwa muhimu katika kuongeza uelewa wa wananchi kuhusu mifumo ya uongozi.
+</p>
+
+<p>
+Mazungumzo ya amani na kuheshimiana yanaendelea kuwa msingi wa maendeleo ya kisiasa.
+</p>
+
+`
+
+},
+
+
+{
+id:11,
+
+category:"Society",
+
+title:"Jamii Yaendelea Kushirikiana Kutatua Changamoto za Kijamii",
+
+date:"5 Januari 2026",
+
+author:"Dorica Ngaleni",
+
+image:"images/society.jpg",
+
+content:`
+
+<p>
+Jamii mbalimbali nchini zimeendelea kushirikiana katika kutafuta suluhisho la changamoto zinazowakabili wananchi.
+</p>
+
+<p>
+Ushirikiano kati ya viongozi, taasisi na wananchi umeonekana kuwa muhimu katika kuboresha maisha ya watu.
+</p>
+
+<p>
+Masuala kama elimu, afya na mazingira yanahitaji ushiriki wa kila mmoja ili kupata maendeleo endelevu.
+</p>
+
+<p>
+Juhudi za pamoja zinaendelea kusaidia kujenga jamii yenye mshikamano na uwajibikaji.
+</p>
+
+`
+
+}
+
+];
+
+
+// Kupokea ID kutoka Read More
+
+const params = new URLSearchParams(window.location.search);
+
+const newsId = Number(params.get("id"));
+
+const selectedNews = newsDatabase.find(news => news.id === newsId);
+
+
+if(selectedNews){
+
+document.getElementById("detailImage").src = selectedNews.image;
+
+document.getElementById("detailCategory").innerHTML = selectedNews.category;
+
+document.getElementById("detailTitle").innerHTML = selectedNews.title;
+
+document.getElementById("detailDate").innerHTML = "📅 " + selectedNews.date;
+
+document.getElementById("detailAuthor").innerHTML = "👤 " + selectedNews.author;
+
+document.getElementById("detailContent").innerHTML = selectedNews.content;
+
+}
+
+else{
+
+document.getElementById("detailContent").innerHTML =
+"<h3>Habari haikupatikana</h3>";
+
+}
+
+</script>
 
 </body>
-
 </html>
