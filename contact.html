@@ -401,7 +401,40 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
+async function loadComments(){
 
+const container = document.getElementById("newComments");
+
+let snapshot = await getDocs(collection(db,"comments"));
+
+container.innerHTML = "";
+
+snapshot.forEach((doc)=>{
+
+let comment = doc.data();
+
+
+container.innerHTML += `
+
+<div class="comment">
+
+<h4>${comment.name}</h4>
+
+<small>${comment.date}</small>
+
+<p>${comment.message}</p>
+
+</div>
+
+`;
+
+});
+
+
+}
+
+
+loadComments();
 
 const form = document.getElementById("commentForm");
 
