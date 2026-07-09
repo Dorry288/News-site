@@ -221,7 +221,7 @@ Habari kuhusu biashara za kidijitali imenisaidia kuelewa namna wafanyabiashara w
 Nimevutiwa na habari za maendeleo kwa sababu zinagusa masuala muhimu kama elimu, afya na huduma za jamii.
 </p>
 
-</div>
+</div.
 
 
 
@@ -274,9 +274,7 @@ Nimefurahia sehemu ya elimu kwa sababu inatoa taarifa zinazoweza kuwasaidia wana
 Makala kuhusu mazingira imenikumbusha umuhimu wa kutunza mazingira na kushiriki katika shughuli za maendeleo ya jamii.
 </p>
 
-</div>
-
-
+</d&copy
 
 <div class="comment">
 
@@ -370,86 +368,85 @@ All Rights Reserved.
 
 
 <script>
+<script type="module">
 
-function displayComments(){
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-let comments = JSON.parse(localStorage.getItem("comments")) || [];
-
-let container = document.getElementById("newComments");
-
-container.innerHTML = "";
-
-comments.forEach(function(comment){
-
-container.innerHTML += `
-
-<div class="comment">
-
-<h4>${comment.name}</h4>
-
-<small>${comment.date}</small>
-
-<p>${comment.message}</p>
-
-</div>
-
-`;
-
-});
-
-}
+import { getFirestore, collection, addDoc, getDocs, serverTimestamp } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
 
-document.getElementById("commentForm").addEventListener("submit", function(event){
+const firebaseConfig = {
 
-event.preventDefault();
+apiKey: "AIzaSyB3JxQ_9Z4WvAuko94ZmCKWzv_6mQt5fNw",
 
+authDomain: "dorryhabarisphere.firebaseapp.com",
 
-let name = document.getElementById("name").value;
+projectId: "dorryhabarisphere",
 
-let message = document.getElementById("message").value;
+storageBucket: "dorryhabarisphere.firebasestorage.app",
 
+messagingSenderId: "1019697496124",
 
-let newComment = {
+appId: "1:1019697496124:web:9c44650672c26836f18339",
 
-name: name,
-
-message: message,
-
-date: new Date().toLocaleDateString("sw-TZ")
+measurementId: "G-09QGB510E9"
 
 };
 
 
 
-let comments = JSON.parse(localStorage.getItem("comments")) || [];
+const app = initializeApp(firebaseConfig);
 
-
-comments.push(newComment);
-
-
-localStorage.setItem("comments", JSON.stringify(comments));
+const db = getFirestore(app);
 
 
 
-document.getElementById("confirmation").innerHTML =
-
-"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa na umeongezwa kwenye maoni.";
+const form = document.getElementById("commentForm");
 
 
 
-document.getElementById("commentForm").reset();
+form.addEventListener("submit", async function(e){
+
+e.preventDefault();
 
 
-displayComments();
 
+const name = document.getElementById("name").value;
+
+const email = document.getElementById("email").value;
+
+const message = document.getElementById("message").value;
+
+
+
+await addDoc(collection(db,"comments"),{
+
+name:name,
+
+email:email,
+
+message:message,
+
+date:new Date().toLocaleDateString("sw-TZ"),
+
+createdAt:serverTimestamp()
 
 });
 
 
 
-displayComments();
+document.getElementById("confirmation").innerHTML =
 
+"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa na umehifadhiwa.";
+
+
+
+form.reset();
+
+
+
+});
 
 </script>
