@@ -1,578 +1,135 @@
-<!-- ANZA SEHEMU YA HABARI NDANI YA news-details.html -->
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma Habari - DorryHabariSphere</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section class="news-details-wrapper">
-
-    <div class="container">
-
-        <div class="news-details-card">
-
-            <img id="detailImage" src="" alt="Habari" class="detail-image">
-
-            <div class="detail-category" id="detailCategory"></div>
-
-            <h1 id="detailTitle"></h1>
-
-            <div class="detail-meta">
-                <span id="detailDate"></span> |
-                <span id="detailAuthor"></span>
+    <!-- HEADER SECTION -->
+    <header class="site-header shadow-sm">
+        <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between">
+            <div>
+                <a href="index.html" class="site-logo">DorryHabari <span>Sphere</span></a>
+                <p class="site-tagline">Reliable News, Stories and Updates</p>
             </div>
-
-            <div id="detailContent" class="detail-content"></div>
-
+            <div class="text-muted small mt-2 mt-md-0">
+                <i class="bi bi-clock"></i> <span>Alhamisi, 9 Julai 2026</span>
+            </div>
         </div>
+    </header>
 
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ms-auto my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav w-100 justify-content-between text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">National</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Entertainment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Society</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREAKING NEWS TICKER -->
+    <div class="breaking-box d-flex align-items-center shadow-sm">
+        <div class="breaking-title px-4 py-2">Breaking&nbsp;News</div>
+        <div class="ticker-wrap flex-grow-1 py-2">
+            <div class="ticker-content">
+                Latest updates from Tanzania and around the world. | Dorica Ngaleni edits portal sections seamlessly. | Stay tuned for credible news reportage.
+            </div>
+        </div>
     </div>
 
-</section>
-
-
-<style>
-
-.news-details-wrapper{
-    padding:40px 0;
-    background:#f8f9fa;
-}
-
-.news-details-card{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.detail-image{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-.detail-category{
-    display:inline-block;
-    margin-top:20px;
-    background:#ff6600;
-    color:white;
-    padding:6px 15px;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-.news-details-card h1{
-    color:#003366;
-    font-size:32px;
-    margin-top:20px;
-}
-
-.detail-meta{
-    color:#777;
-    margin:15px 0;
-}
-
-.detail-content{
-    font-size:18px;
-    line-height:1.8;
-    color:#333;
-}
-
-.detail-content p{
-    margin-bottom:20px;
-}
-
-</style>
-
-
-<script>
-
-const newsDatabase = [
-
-{
-id:1,
-
-category:"Business & Development",
-
-title:"Tanzania Yalenga Kuimarisha Uwekezaji Kupitia Fursa za Biashara za Kimataifa",
-
-date:"8 Julai 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/sabasaba.jpg",
-
-content:`
-
-<p>
-Tanzania imeendelea kutumia fursa za biashara na uwekezaji kupitia Maonesho ya Kimataifa ya Biashara Dar es Salaam maarufu kama Sabasaba.
-</p>
-
-<p>
-Maonesho hayo yamekuwa jukwaa muhimu linalowaunganisha wafanyabiashara, wawekezaji na taasisi mbalimbali kutoka ndani na nje ya nchi.
-</p>
-
-<p>
-Kupitia maonesho hayo, bidhaa mbalimbali za Tanzania huoneshwa huku wafanyabiashara wakipata nafasi ya kutafuta masoko mapya na washirika wa kibiashara.
-</p>
-
-<p>
-Serikali imeendelea kuweka mazingira mazuri ya uwekezaji kwa kuboresha sera na mifumo inayorahisisha kufanya biashara nchini.
-</p>
-
-<p>
-Wataalamu wa uchumi wanaeleza kuwa uwekezaji mkubwa unaweza kuongeza ajira, uzalishaji wa bidhaa na kukuza mapato ya wananchi.
-</p>
-
-<p>
-Sekta binafsi inaendelea kuwa sehemu muhimu katika kufanikisha maendeleo ya kiuchumi kupitia ubunifu na uzalishaji.
-</p>
-
-<p>
-Kwa ujumla, juhudi za kuvutia wawekezaji zinaendelea kuwa msingi wa kuimarisha uchumi wa Tanzania.
-</p>
-
-`
-
-},
-
-
-{
-id:2,
-
-category:"National Security",
-
-title:"Ulinzi Waimarishwa Kulinda Amani na Usalama Nchini",
-
-date:"7 Julai 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/security.jpg",
-
-content:`
-
-<p>
-Vyombo vya ulinzi na usalama nchini Tanzania vimeendelea kuimarisha mikakati mbalimbali kuhakikisha amani na utulivu vinaendelea kuwepo.
-</p>
-
-<p>
-Hatua mbalimbali zimechukuliwa ikiwemo kuongeza ulinzi katika maeneo muhimu na kuimarisha ushirikiano na wananchi.
-</p>
-
-<p>
-Lengo kubwa ni kuhakikisha wananchi wanaendelea kufanya shughuli zao katika mazingira salama.
-</p>
-
-<p>
-Wananchi wameendelea kuhamasishwa kushirikiana na vyombo vya usalama kwa kutoa taarifa kuhusu changamoto zinazoweza kuhatarisha amani.
-</p>
-
-<p>
-Amani ni msingi muhimu wa maendeleo ya kijamii na kiuchumi kwa taifa lolote.
-</p>
-
-<p>
-Ushirikiano kati ya jamii na vyombo vya usalama unaendelea kuwa nguzo katika kulinda utulivu wa nchi.
-</p>
-
-`
-
-}
-
-];
-
-,
-
-{
-id:3,
-
-category:"Technology",
-
-title:"Serikali Yaendelea Kuboresha Huduma za Kidijitali kwa Wananchi",
-
-date:"5 Julai 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/digital.jpg",
-
-content:`
-
-<p>
-Serikali imeendelea kuwekeza katika matumizi ya teknolojia ya kidijitali kwa lengo la kurahisisha upatikanaji wa huduma mbalimbali kwa wananchi.
-</p>
-
-<p>
-Mifumo ya kielektroniki imekuwa ikitumika katika maeneo mbalimbali ili kupunguza muda wa wananchi kupata huduma na kuongeza ufanisi.
-</p>
-
-<p>
-Huduma za mtandaoni zimewasaidia wananchi kupata taarifa na huduma bila kulazimika kufika moja kwa moja katika ofisi husika.
-</p>
-
-<p>
-Hatua hiyo imekuwa sehemu ya jitihada za Tanzania kuelekea uchumi wa kidijitali unaotumia teknolojia katika maendeleo.
-</p>
-
-<p>
-Wataalamu wa teknolojia wanaeleza kuwa matumizi ya mifumo salama ya kidijitali yanaweza kuongeza uwazi na uwajibikaji katika utoaji wa huduma.
-</p>
-
-<p>
-Pamoja na mafanikio hayo, bado kuna umuhimu wa kuongeza elimu ya matumizi ya teknolojia kwa wananchi.
-</p>
-
-`
-
-},
-
-
-{
-id:4,
-
-category:"National",
-
-title:"Umeme Wakatika Katika Mikoa Mingi Tanzania, Shughuli Za Kiuchumi Zasimama kwa Muda",
-
-date:"27 Juni 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/umeme.jpg",
-
-content:`
-
-<p>
-Baadhi ya maeneo nchini Tanzania yaliathirika baada ya kutokea changamoto katika mfumo wa gridi ya taifa iliyosababisha kukatika kwa huduma ya umeme.
-</p>
-
-<p>
-Hitilafu hiyo iliathiri shughuli mbalimbali za kijamii na kiuchumi ikiwemo biashara, viwanda na huduma nyingine zinazotegemea umeme.
-</p>
-
-<p>
-Wananchi walilazimika kusubiri kurejeshwa kwa huduma huku wataalamu wa nishati wakifanya kazi ya kutatua tatizo hilo.
-</p>
-
-<p>
-Umeme ni huduma muhimu katika maendeleo ya nchi kwa kuwa unasaidia uzalishaji na ukuaji wa shughuli za kiuchumi.
-</p>
-
-<p>
-Taasisi zinazohusika na nishati zimeendelea kufanya maboresho ya miundombinu ili kupunguza changamoto za kukatika kwa umeme.
-</p>
-
-<p>
-Uboreshaji wa mfumo wa nishati unaonekana kuwa muhimu katika kuhakikisha upatikanaji wa umeme wa uhakika.
-</p>
-
-`
-
-},
-
-
-{
-id:5,
-
-category:"Sports",
-
-title:"Yanga SC Yafanya Maandalizi Kabla ya Msimu Mpya wa Mashindano",
-
-date:"20 Juni 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/yanga.jpg",
-
-content:`
-
-<p>
-Klabu ya Yanga SC imeendelea kufanya maandalizi kuelekea msimu mpya wa mashindano kwa lengo la kuwa na kikosi chenye ushindani.
-</p>
-
-<p>
-Benchi la ufundi limeweka mkazo katika mazoezi ya kuongeza uwezo wa wachezaji pamoja na kuboresha mbinu za mchezo.
-</p>
-
-<p>
-Maandalizi ya timu yanahusisha programu maalumu za mazoezi, tathmini ya wachezaji na mipango ya msimu mzima.
-</p>
-
-<p>
-Mashabiki wameendelea kuipa timu hiyo matumaini makubwa kuelekea mashindano mbalimbali.
-</p>
-
-<p>
-Uongozi wa klabu unaendelea kufanya mipango ya kuhakikisha timu inakuwa na mazingira bora ya kushindana.
-</p>
-
-`
-
-},
-
-
-{
-id:6,
-
-category:"Artificial Intelligence",
-
-title:"Artificial Intelligence Yabadilisha Sekta ya Habari Katika Enzi ya Kidijitali",
-
-date:"15 Mei 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/ai.jpg",
-
-content:`
-
-<p>
-Teknolojia ya Artificial Intelligence imeendelea kubadilisha namna habari zinavyokusanywa, kuchambuliwa na kusambazwa katika enzi ya kidijitali.
-</p>
-
-<p>
-Waandishi wa habari wanatumia zana za AI kusaidia kufanya utafiti, kuchanganua taarifa na kuboresha uzalishaji wa maudhui.
-</p>
-
-<p>
-Matumizi ya teknolojia hiyo yameongeza kasi ya kazi za vyombo vya habari lakini pia yameleta mijadala kuhusu maadili.
-</p>
-
-<p>
-Wataalamu wanaeleza kuwa AI inapaswa kutumika kama chombo cha kusaidia waandishi na si kuchukua nafasi ya uamuzi wa binadamu.
-</p>
-
-<p>
-Uhakiki wa taarifa bado ni jukumu muhimu ili kuhakikisha habari zinazotolewa ni sahihi.
-</p>
-
-`
-
-}
-,
-
-{
-id:7,
-
-category:"Health",
-
-title:"Wataalamu Wahimiza Uchunguzi wa Afya Mara kwa Mara",
-
-date:"18 Aprili 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/health.jpg",
-
-content:`
-
-<p>
-Wataalamu wa afya wameendelea kutoa elimu kwa wananchi kuhusu umuhimu wa kufanya uchunguzi wa afya mara kwa mara.
-</p>
-
-<p>
-Uchunguzi wa mapema husaidia kugundua matatizo ya kiafya kabla hayajawa makubwa na kuongeza nafasi ya kupata matibabu kwa wakati.
-</p>
-
-<p>
-Wananchi wamehamasishwa kufuata taratibu za afya ikiwa ni pamoja na kupata ushauri kutoka kwa wataalamu.
-</p>
-
-<p>
-Afya bora ni msingi wa maendeleo kwa sababu mtu mwenye afya nzuri anaweza kushiriki kikamilifu katika shughuli za kijamii na kiuchumi.
-</p>
-
-<p>
-Wataalamu wameendelea kusisitiza umuhimu wa lishe bora, mazoezi na kufuatilia afya mara kwa mara.
-</p>
-
-`
-
-},
-
-
-{
-id:8,
-
-category:"Education",
-
-title:"Vyuo Vyatumia Zaidi Mifumo ya Kujifunza Mtandaoni",
-
-date:"10 Machi 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/education.jpg",
-
-content:`
-
-<p>
-Vyuo vikuu vimeendelea kutumia mifumo ya kujifunza mtandaoni ili kuongeza upatikanaji wa elimu kwa wanafunzi.
-</p>
-
-<p>
-Teknolojia imewezesha wanafunzi kupata mihadhara, vifaa vya kujifunzia na kufanya mawasiliano na walimu kwa urahisi zaidi.
-</p>
-
-<p>
-Mfumo huu umekuwa muhimu hasa kwa wanafunzi waliopo maeneo mbalimbali ambao hawawezi kufika darasani kila siku.
-</p>
-
-<p>
-Pamoja na mafanikio hayo, changamoto kama upatikanaji wa intaneti bado zinahitaji kutatuliwa.
-</p>
-
-<p>
-Matumizi ya teknolojia katika elimu yanaendelea kubadilisha mfumo wa utoaji wa maarifa katika dunia ya sasa.
-</p>
-
-`
-
-},
-
-
-{
-id:9,
-
-category:"Entertainment",
-
-title:"Sekta ya Burudani Tanzania Yazidi Kukua Kupitia Wasanii Chipukizi",
-
-date:"12 Februari 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/entertainment.jpg",
-
-content:`
-
-<p>
-Sekta ya burudani Tanzania imeendelea kukua kutokana na ongezeko la wasanii wapya na matumizi ya majukwaa ya kidijitali.
-</p>
-
-<p>
-Muziki, filamu na sanaa nyingine zimekuwa sehemu muhimu ya ajira na kukuza vipaji vya vijana.
-</p>
-
-<p>
-Mitandao ya kijamii imewapa wasanii nafasi ya kufikia mashabiki wengi zaidi ndani na nje ya nchi.
-</p>
-
-<p>
-Wadau wa burudani wanaeleza kuwa kuna umuhimu wa kuwekeza zaidi katika ubunifu na masoko ya kazi za wasanii.
-</p>
-
-`
-
-},
-
-
-{
-id:10,
-
-category:"Politics",
-
-title:"Wanasiasa Wahimiza Ushiriki wa Wananchi Katika Masuala ya Kitaifa",
-
-date:"25 Januari 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/politics.jpg",
-
-content:`
-
-<p>
-Ushiriki wa wananchi katika masuala ya kisiasa na kijamii unaendelea kupewa umuhimu katika maendeleo ya taifa.
-</p>
-
-<p>
-Viongozi mbalimbali wameendelea kusisitiza umuhimu wa wananchi kufahamu wajibu wao katika ujenzi wa nchi.
-</p>
-
-<p>
-Elimu ya uraia inaonekana kuwa muhimu katika kuongeza uelewa wa wananchi kuhusu mifumo ya uongozi.
-</p>
-
-<p>
-Mazungumzo ya amani na kuheshimiana yanaendelea kuwa msingi wa maendeleo ya kisiasa.
-</p>
-
-`
-
-},
-
-
-{
-id:11,
-
-category:"Society",
-
-title:"Jamii Yaendelea Kushirikiana Kutatua Changamoto za Kijamii",
-
-date:"5 Januari 2026",
-
-author:"Dorica Ngaleni",
-
-image:"images/society.jpg",
-
-content:`
-
-<p>
-Jamii mbalimbali nchini zimeendelea kushirikiana katika kutafuta suluhisho la changamoto zinazowakabili wananchi.
-</p>
-
-<p>
-Ushirikiano kati ya viongozi, taasisi na wananchi umeonekana kuwa muhimu katika kuboresha maisha ya watu.
-</p>
-
-<p>
-Masuala kama elimu, afya na mazingira yanahitaji ushiriki wa kila mmoja ili kupata maendeleo endelevu.
-</p>
-
-<p>
-Juhudi za pamoja zinaendelea kusaidia kujenga jamii yenye mshikamano na uwajibikaji.
-</p>
-
-`
-
-}
-
-];
-
-
-// Kupokea ID kutoka Read More
-
-const params = new URLSearchParams(window.location.search);
-
-const newsId = Number(params.get("id"));
-
-const selectedNews = newsDatabase.find(news => news.id === newsId);
-
-
-if(selectedNews){
-
-document.getElementById("detailImage").src = selectedNews.image;
-
-document.getElementById("detailCategory").innerHTML = selectedNews.category;
-
-document.getElementById("detailTitle").innerHTML = selectedNews.title;
-
-document.getElementById("detailDate").innerHTML = "📅 " + selectedNews.date;
-
-document.getElementById("detailAuthor").innerHTML = "👤 " + selectedNews.author;
-
-document.getElementById("detailContent").innerHTML = selectedNews.content;
-
-}
-
-else{
-
-document.getElementById("detailContent").innerHTML =
-"<h3>Habari haikupatikana</h3>";
-
-}
-
-</script>
-
+    <!-- MAIN BODY CONTENT -->
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <!-- LEFT AREA: FULL NEWS DETAIL (8 Columns) -->
+            <div class="col-lg-8">
+                <div class="bg-white p-4 rounded shadow-sm" id="news-details-content">
+                    <!-- JavaScript dynamic filling hapa -->
+                </div>
+            </div>
+
+            <!-- RIGHT AREA: SIDEBAR WIDGETS (4 Columns) -->
+            <div class="col-lg-4">
+                <div class="d-flex flex-column gap-4">
+                    
+                    <!-- Trending Widget -->
+                    <div class="sidebar-widget shadow-sm">
+                        <h3 class="widget-title">Trending Stories</h3>
+                        <div id="sidebar-trending"></div>
+                    </div>
+
+                    <!-- Most Read Widget -->
+                    <div class="sidebar-widget shadow-sm">
+                        <h3 class="widget-title">Most Read</h3>
+                        <div id="sidebar-mostread"></div>
+                    </div>
+
+                    <!-- Other News Widget -->
+                    <div class="sidebar-widget shadow-sm">
+                        <h3 class="widget-title">Habari Nyingine</h3>
+                        <div id="sidebar-other"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer bg-dark text-white pt-4 pb-3 mt-auto">
+        <div class="container">
+            <div class="row g-4 justify-content-between align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <a href="index.html" class="footer-logo">DorryHabari <span>Sphere</span></a>
+                    <p class="small text-muted mt-2">Portal kubwa ya kidijitali inayotoa habari za ukweli na za uhakika kila wakati nchini Tanzania.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a href="about.html">About Us</a></li>
+                        <li class="list-inline-item mx-2"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="fs-4 d-flex gap-3 justify-content-center justify-content-md-end mb-2">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                    <p class="small text-muted mb-0">Copyright &copy; 2026 DorryHabari Sphere. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core Data Application JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
