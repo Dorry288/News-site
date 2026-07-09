@@ -371,30 +371,85 @@ All Rights Reserved.
 
 <script>
 
+function displayComments(){
+
+let comments = JSON.parse(localStorage.getItem("comments")) || [];
+
+let container = document.getElementById("newComments");
+
+container.innerHTML = "";
+
+comments.forEach(function(comment){
+
+container.innerHTML += `
+
+<div class="comment">
+
+<h4>${comment.name}</h4>
+
+<small>${comment.date}</small>
+
+<p>${comment.message}</p>
+
+</div>
+
+`;
+
+});
+
+}
+
+
+
 document.getElementById("commentForm").addEventListener("submit", function(event){
 
-
 event.preventDefault();
+
+
+let name = document.getElementById("name").value;
+
+let message = document.getElementById("message").value;
+
+
+let newComment = {
+
+name: name,
+
+message: message,
+
+date: new Date().toLocaleDateString("sw-TZ")
+
+};
+
+
+
+let comments = JSON.parse(localStorage.getItem("comments")) || [];
+
+
+comments.push(newComment);
+
+
+localStorage.setItem("comments", JSON.stringify(comments));
 
 
 
 document.getElementById("confirmation").innerHTML =
 
-"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa na utapitiwa kabla ya kuchapishwa.";
+"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa na umeongezwa kwenye maoni.";
 
 
 
 document.getElementById("commentForm").reset();
 
 
+displayComments();
+
 
 });
 
 
+
+displayComments();
+
+
 </script>
-
-
-
-</body>
-
-    </html>
