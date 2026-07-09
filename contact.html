@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="sw">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | DorryHabariSphere</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>Contact Us | DorryHabariSphere</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
+
 <body>
+
 
 <header>
 
 <div class="header-main container">
 
-    <div class="logo-container">
-        <h1 class="site-logo">
-            DorryHabari<span class="logo-accent">Sphere</span>
-        </h1>
-    </div>
+<div class="logo-container">
 
-
-    <div class="search-container">
-        <input type="text" placeholder="Tafuta habari hapa...">
-        <button>
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
+<h1 class="site-logo">
+DorryHabari<span class="logo-accent">Sphere</span>
+</h1>
 
 </div>
+
+
+<div class="search-container">
+
+<input type="text" placeholder="Tafuta habari hapa...">
+
+<button>
+<i class="fas fa-search"></i>
+</button>
+
+</div>
+
+
+</div>
+
 
 
 <nav>
@@ -42,7 +55,9 @@
 
 <li><a href="news.html">📰 News</a></li>
 
-<li><a href="sports.html">⚽ Sports</a></li>
+<li><a href="business.html">💼 Business</a></li>
+
+<li><a href="development.html">🌍 Development</a></li>
 
 <li><a href="technology.html">💻 Technology</a></li>
 
@@ -54,7 +69,9 @@
 
 </nav>
 
+
 </header>
+
 
 
 
@@ -67,12 +84,14 @@ CONTACT
 </span>
 
 <marquee>
-📞 Wasiliana na DorryHabariSphere kwa maoni, ushauri au taarifa zaidi kuhusu huduma zetu.
+📞 Wasiliana na DorryHabariSphere kwa maoni, ushauri na taarifa zaidi kuhusu habari, biashara na maendeleo.
 </marquee>
 
 </div>
 
 </div>
+
+
 
 
 
@@ -82,68 +101,203 @@ CONTACT
 <section class="main-content-area">
 
 
-<div style="background:white; padding:30px; border-radius:6px; border:1px solid #eef2f5;">
+
+<div class="contact-box">
+
 
 
 <h2 class="section-title">
-<span>📞 Wasiliana Nasi</span>
+📞 Wasiliana Nasi
 </h2>
 
 
+
 <p>
-Tungependa kusikia kutoka kwako. Ikiwa una swali, maoni, ushauri au unahitaji taarifa zaidi kuhusu DorryHabariSphere, tafadhali wasiliana nasi kupitia njia zifuatazo.
+Karibu DorryHabariSphere. Tunathamini maoni na mrejesho kutoka kwa wasomaji wetu. Tuma ujumbe wako, ushauri au maoni kuhusu habari zetu.
 </p>
 
 
 
-<form style="margin-top:25px; display:flex; flex-direction:column; gap:15px;">
 
-
-<div>
-
-<label>Jina Kamili:</label>
-
-<input type="text" placeholder="Ingiza jina lako"
-style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;">
-
-</div>
+<form id="commentForm">
 
 
 
-<div>
+<label>
+Jina Kamili
+</label>
 
-<label>Email:</label>
 
-<input type="email" placeholder="Ingiza email yako"
-style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;">
-
-</div>
+<input type="text" id="name" placeholder="Andika jina lako" required>
 
 
 
-<div>
-
-<label>Ujumbe:</label>
-
-<textarea rows="5" placeholder="Andika ujumbe wako hapa..."
-style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;"></textarea>
-
-</div>
 
 
+<label>
+Barua Pepe
+</label>
 
-<button class="read-more-btn" type="submit">
-Tuma Ujumbe
+
+<input type="email" id="email" placeholder="Andika email yako" required>
+
+
+
+
+
+<label>
+Maoni Yako
+</label>
+
+
+<textarea id="message" rows="6" placeholder="Andika maoni yako hapa..." required></textarea>
+
+
+
+
+<button type="submit" class="read-more-btn">
+Tuma Maoni
 </button>
+
+
+<p id="confirmation"></p>
+
 
 
 </form>
 
 
+
 </div>
 
 
+
+
+
+<div class="contact-box">
+
+
+<h2 class="section-title">
+💬 Maoni ya Wasomaji
+</h2>
+
+
+<div class="comment">
+
+<h4>Asha Mollel – Arusha</h4>
+
+<small>15 Juni 2026</small>
+
+<p>
+Nimeipenda DorryHabariSphere kwa sababu inanipa taarifa kuhusu biashara, maendeleo na teknolojia kwa lugha rahisi kueleweka.
+</p>
+
+</div>
+
+
+
+<div class="comment">
+
+<h4>Hassan Juma – Dar es Salaam</h4>
+
+<small>18 Juni 2026</small>
+
+<p>
+Habari kuhusu biashara za kidijitali imenisaidia kuelewa namna wafanyabiashara wadogo wanaweza kutumia teknolojia kukuza biashara zao.
+</p>
+
+</div>
+
+
+
+<div class="comment">
+
+<h4>Rehema Said – Dodoma</h4>
+
+<small>22 Juni 2026</small>
+
+<p>
+Nimevutiwa na habari za maendeleo kwa sababu zinagusa masuala muhimu kama elimu, afya na huduma za jamii.
+</p>
+
+</div>
+
+
+
+<div class="comment">
+
+<h4>Musa Peter – Mwanza</h4>
+
+<small>27 Juni 2026</small>
+
+<p>
+Ningependa kuona makala zaidi kuhusu vijana, ajira na fursa mbalimbali za maendeleo nchini.
+</p>
+
+</div>
+<div class="comment">
+
+<h4>Neema Joseph – Morogoro</h4>
+
+<small>2 Julai 2026</small>
+
+<p>
+Habari za teknolojia zimeeleza vizuri namna matumizi ya mifumo ya kidijitali yanavyoweza kusaidia biashara na huduma mbalimbali.
+</p>
+
+</div>
+
+
+
+<div class="comment">
+
+<h4>Baraka William – Mbeya</h4>
+
+<small>4 Julai 2026</small>
+
+<p>
+Nimefurahia sehemu ya elimu kwa sababu inatoa taarifa zinazoweza kuwasaidia wanafunzi na watu wanaotafuta maarifa mapya.
+</p>
+
+</div>
+
+
+
+<div class="comment">
+
+<h4>Grace Mushi – Arusha</h4>
+
+<small>6 Julai 2026</small>
+
+<p>
+Makala kuhusu mazingira imenikumbusha umuhimu wa kutunza mazingira na kushiriki katika shughuli za maendeleo ya jamii.
+</p>
+
+</div>
+
+
+
+<div class="comment">
+
+<h4>John Michael – Dar es Salaam</h4>
+
+<small>8 Julai 2026</small>
+
+<p>
+DorryHabariSphere ni jukwaa lenye mchanganyiko mzuri wa habari, biashara na maendeleo. Ningependa kuona taarifa mpya zikiendelea kuongezwa mara kwa mara.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
 </section>
+
 
 
 
@@ -152,6 +306,7 @@ Tuma Ujumbe
 
 
 <div class="sidebar-box">
+
 
 <h3 class="sidebar-box-title">
 Ofisi Yetu
@@ -162,13 +317,16 @@ Ofisi Yetu
 📍 Arusha, Tanzania
 </p>
 
+
 <p>
 📞 0747488660
 </p>
 
+
 <p>
 📧 dorryhabarisphere@gmail.com
 </p>
+
 
 <p>
 ✍️ Mwandishi Mkuu: Dorica Ngaleni
@@ -178,27 +336,12 @@ Ofisi Yetu
 </div>
 
 
-
-<div class="sidebar-box">
-
-<h3 class="sidebar-box-title">
-Muda wa Kazi
-</h3>
-
-
-<p>
-Jumatatu - Ijumaa<br>
-Saa 2:00 Asubuhi - Saa 11:00 Jioni
-</p>
-
-
-</div>
-
-
 </aside>
 
 
+
 </main>
+
 
 
 
@@ -207,6 +350,7 @@ Saa 2:00 Asubuhi - Saa 11:00 Jioni
 
 
 <div class="footer-bottom container">
+
 
 <p>
 &copy; 2026 DorryHabariSphere |
@@ -222,5 +366,34 @@ All Rights Reserved.
 
 
 
+
+
+<script>
+
+document.getElementById("commentForm").addEventListener("submit", function(event){
+
+
+event.preventDefault();
+
+
+
+document.getElementById("confirmation").innerHTML =
+
+"✅ Asante kwa maoni yako! Ujumbe wako umepokelewa na utapitiwa kabla ya kuchapishwa.";
+
+
+
+document.getElementById("commentForm").reset();
+
+
+
+});
+
+
+</script>
+
+
+
 </body>
-</html>
+
+    </html>
