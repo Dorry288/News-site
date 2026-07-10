@@ -444,7 +444,7 @@ SOURCE: Wizara ya Mawasiliano na Teknolojia ya Habari / TCRA
 
 {
 id: 12,
-category: "Business",
+category: "Business and development",
 title: "Startup Centers Tanzania Zawapa Vijana Fursa za Kuanzisha Biashara",
 image: "images/startup-center.jpg",
 date: "Julai 2026",
@@ -459,7 +459,7 @@ source: "DorryHabariSphere"
 
 {
 id: 13,
-category: "Business",
+category: "Business and development",
 title: "Utalii Tanzania Wafungua Fursa Mpya za Uwekezaji na Ajira kwa Vijana",
 image: "images/tourism-tanzania.jpg",
 date: "Julai 2026",
@@ -474,7 +474,7 @@ source: "DorryHabariSphere"
 
 {
 id: 14,
-category: "Business",
+category: "Business and development",
 title: "Biashara Ndogo Zanufaika na Mifumo ya Kidijitali ya Malipo",
 image: "images/digital-payment.jpg",
 date: "Juni 2026",
@@ -679,4 +679,4 @@ summary: "Ushirikiano wa wananchi unaendelea kuwa msingi muhimu katika kutatua c
 content: "Jamii mbalimbali zimeendelea kushirikiana katika miradi ya maendeleo na kusaidiana kutatua changamoto zinazowakabili.\n\nUshirikiano huu umeonyesha umuhimu wa nguvu ya pamoja katika kujenga taifa.",
 source: "DorryHabariSphere"
   }
-  ]:
+  ];
