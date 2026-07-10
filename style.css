@@ -366,3 +366,8 @@ main {
 .article-body {
     text-align: justify;
 }
+.article-body p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    text-align: justify;
+}
