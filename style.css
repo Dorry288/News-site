@@ -3,7 +3,7 @@
    ========================================================================== */
 
 :root {
-    --primary-blue: #0056b3;
+    --primary-blue: #003366;
     --primary-orange: #ff6600;
     --light-bg: #f8f9fa;
     --dark-text: #212529;
@@ -364,10 +364,13 @@ main {
 }
 
 .article-body {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 20px;
     text-align: justify;
 }
+
 .article-body p {
     margin-bottom: 12px;
-    line-height: 1.6;
-    text-align: justify;
 }
