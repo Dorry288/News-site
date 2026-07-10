@@ -257,7 +257,7 @@ ${news.summary}
 
 
 <div class="article-body">
-${news.content.replace(/\n/g,"<br><br>")}
+${news.content.split("\n\n").map(p=>`<p>${p}</p>`).join("")}
 </div>
 
 
