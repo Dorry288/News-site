@@ -441,3 +441,243 @@ SOURCE: Wizara ya Mawasiliano na Teknolojia ya Habari / TCRA
 }
 
 ];
+
+// NEWS ID 12
+
+{
+id: 12,
+category: "Business",
+title: "Startup Centers Tanzania Zawapa Vijana Fursa za Kuanzisha Biashara",
+image: "images/startup-center.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Vituo vya ubunifu na startup vinaendelea kusaidia vijana kupata ujuzi, mitaji na mawazo mapya ya biashara.",
+content: "Startup centers zimekuwa sehemu muhimu kwa vijana wanaotafuta kuanzisha biashara mpya. Kupitia programu mbalimbali za mafunzo na ushauri, vijana wanapata nafasi ya kuboresha mawazo yao ya kibiashara.\n\nTeknolojia imekuwa chachu kubwa katika ukuaji wa biashara hizo kwa kurahisisha upatikanaji wa masoko na wateja.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 13
+
+{
+id: 13,
+category: "Business",
+title: "Utalii Tanzania Wafungua Fursa Mpya za Uwekezaji na Ajira kwa Vijana",
+image: "images/tourism-tanzania.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Sekta ya utalii inaendelea kuwa chanzo kikubwa cha fursa za biashara na ajira kwa Watanzania.",
+content: "Utalii umeendelea kuwa moja ya sekta muhimu katika kukuza uchumi wa Tanzania. Wawekezaji na vijana wameendelea kupata nafasi kupitia huduma mbalimbali zinazohusiana na utalii.\n\nMatumizi ya teknolojia katika kutangaza vivutio vya Tanzania yameongeza uhitaji wa huduma za kisasa.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 14
+
+{
+id: 14,
+category: "Business",
+title: "Biashara Ndogo Zanufaika na Mifumo ya Kidijitali ya Malipo",
+image: "images/digital-payment.jpg",
+date: "Juni 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Wafanyabiashara wadogo wameanza kutumia mifumo ya kidijitali kuongeza ufanisi wa biashara zao.",
+content: "Mifumo ya malipo ya kidijitali imebadilisha namna wafanyabiashara wanavyofanya biashara nchini Tanzania.\n\nHuduma hizi zimewasaidia wafanyabiashara kufikia wateja wengi zaidi na kurahisisha miamala.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 15
+
+{
+id: 15,
+category: "Technology",
+title: "Matumizi ya AI Yabadilisha Namna Taasisi na Jamii Zinavyofanya Kazi",
+image: "images/artificial-intelligence.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Akili bandia imeanza kutumika katika sekta mbalimbali kusaidia kufanya maamuzi na kuongeza ufanisi.",
+content: "Teknolojia ya Artificial Intelligence imeendelea kukua na kutumika katika elimu, biashara na huduma mbalimbali.\n\nWataalamu wanaeleza kuwa matumizi sahihi ya AI yanaweza kusaidia kutatua changamoto nyingi za kijamii.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 16
+
+{
+id: 16,
+category: "Technology",
+title: "Jamii Zashirikiana Zaidi Kupitia Teknolojia za Mawasiliano",
+image: "images/community-technology.jpg",
+date: "Juni 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Teknolojia imekuwa daraja la kuunganisha jamii na kurahisisha mawasiliano.",
+content: "Mitandao ya kijamii na mifumo ya mawasiliano imeendelea kusaidia jamii kushirikiana katika masuala mbalimbali.\n\nWananchi wamekuwa wakitumia teknolojia kutoa taarifa, kujifunza na kusaidiana.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 17
+
+{
+id: 17,
+category: "Technology",
+title: "Teknolojia Yasaidia Wakulima Kuongeza Uzalishaji wa Mazao",
+image: "images/smart-farming.jpg",
+date: "Mei 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Wakulima wanatumia teknolojia kupata taarifa za masoko, hali ya hewa na mbinu bora za kilimo.",
+content: "Matumizi ya teknolojia katika kilimo yameleta mabadiliko makubwa kwa wakulima.\n\nProgramu na mifumo ya kidijitali inasaidia wakulima kupata taarifa muhimu na kuongeza uzalishaji.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 18
+
+{
+id: 18,
+category: "Entertainment",
+title: "Burudani ya Kidijitali Yawapa Wasanii Fursa Mpya za Kufikia Mashabiki",
+image: "images/digital-entertainment.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Wasanii wameanza kutumia majukwaa ya kidijitali kusambaza kazi zao na kujenga biashara.",
+content: "Majukwaa ya kidijitali yamefungua milango mipya kwa wasanii nchini Tanzania.\n\nKupitia mitandao mbalimbali, wasanii wanaweza kufikia mashabiki wengi na kupata kipato.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 19
+
+{
+id: 19,
+category: "Entertainment",
+title: "Mitandao ya Kijamii Yabadilisha Sekta ya Burudani Tanzania",
+image: "images/social-media-entertainment.jpg",
+date: "Juni 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Mitandao ya kijamii imekuwa sehemu muhimu ya kukuza vipaji na kazi za burudani.",
+content: "Wasanii wengi wamekuwa wakitumia mitandao ya kijamii kutangaza kazi zao.\n\nMabadiliko haya yameongeza ushindani na ubunifu katika sekta ya burudani.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 20
+
+{
+id: 20,
+category: "Entertainment",
+title: "Wasanii Vijana Watumia Teknolojia Kujenga Ajira Kupitia Vipaji",
+image: "images/young-artists.jpg",
+date: "Mei 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Vijana wanaendelea kutumia ubunifu na teknolojia kutengeneza nafasi za ajira katika burudani.",
+content: "Sekta ya burudani imekuwa chanzo cha ajira kwa vijana wengi.\n\nTeknolojia imewawezesha wasanii kujitangaza na kuuza kazi zao kwa urahisi zaidi.",
+source: "DorryHabariSphere"
+},
+
+//NEWS ID 21
+
+{
+id: 21,
+category: "Sports",
+title: "Wanariadha Tanzania Waendelea Kujiandaa kwa Mashindano ya Kimataifa",
+image: "images/athletes-tanzania.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Wanariadha mbalimbali nchini wanaendelea na maandalizi kwa ajili ya kushiriki mashindano makubwa ya kimataifa.",
+content: "Maandalizi ya wanamichezo Tanzania yameendelea kuimarika kupitia programu mbalimbali za mafunzo.\n\nWataalamu wa michezo wanaeleza umuhimu wa uwekezaji katika vipaji vya vijana ili kuongeza mafanikio ya nchi kwenye mashindano ya kimataifa.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 22
+
+{
+id: 22,
+category: "Sports",
+title: "Programu za Michezo ya Vijana Zasaidia Kugundua Vipaji Vipya",
+image: "images/youth-sports.jpg",
+date: "Juni 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Mipango mbalimbali ya michezo kwa vijana imeendelea kusaidia kugundua na kukuza vipaji vipya.",
+content: "Michezo ya vijana imekuwa njia muhimu ya kuwajenga vijana na kuwapa nafasi ya kuonyesha uwezo wao.\n\nMashindano ya ngazi mbalimbali yameendelea kuibua vipaji vipya katika maeneo tofauti nchini.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 23
+
+{
+id: 23,
+category: "Sports",
+title: "Teknolojia Yaanza Kuboresha Mafunzo na Ufuatiliaji wa Michezo",
+image: "images/sports-technology.jpg",
+date: "Mei 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Matumizi ya teknolojia katika michezo yanaongeza ubora wa mafunzo na utendaji wa wanamichezo.",
+content: "Teknolojia imeanza kutumika katika uchambuzi wa michezo, ufuatiliaji wa afya za wanamichezo na kuboresha mbinu za mazoezi.\n\nMabadiliko haya yameleta njia mpya za kuendeleza vipaji vya michezo.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 24
+
+{
+id: 24,
+category: "Health",
+title: "Teknolojia Yarahisisha Upatikanaji wa Huduma za Afya Tanzania",
+image: "images/digital-health.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Huduma za afya kwa njia ya kidijitali zinaendelea kusaidia wananchi kupata taarifa na huduma kwa urahisi.",
+content: "Mifumo ya kidijitali imeanza kutumika katika sekta ya afya ili kuboresha utoaji wa huduma.\n\nWananchi wanaweza kupata taarifa za afya na ushauri kupitia majukwaa mbalimbali ya teknolojia.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 25
+
+{
+id: 25,
+category: "Health",
+title: "Jamii Yahimizwa Kuzingatia Lishe Bora kwa Afya Imara",
+image: "images/healthy-food.jpg",
+date: "Juni 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Wataalamu wa afya wanaendelea kutoa elimu kuhusu umuhimu wa lishe bora katika maisha ya kila siku.",
+content: "Lishe bora ni sehemu muhimu ya kuzuia magonjwa na kuboresha afya ya jamii.\n\nElimu kwa wananchi imeendelea kutolewa ili kuongeza uelewa kuhusu ulaji unaofaa.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 26
+
+{
+id: 26,
+category: "Health",
+title: "Huduma za Afya Mtandaoni Zazidi Kupata Umaarufu Tanzania",
+image: "images/online-health.jpg",
+date: "Mei 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Huduma za ushauri wa afya mtandaoni zinaendelea kusaidia watu kupata msaada kwa haraka.",
+content: "Matumizi ya mtandao katika sekta ya afya yameongeza uwezekano wa wananchi kupata taarifa muhimu.\n\nHuduma hizi zimekuwa msaada hasa kwa watu wanaohitaji ushauri wa awali.",
+source: "DorryHabariSphere"
+},
+
+// NEWS ID 27
+
+{
+id: 27,
+category: "National",
+title: "Jamii Zaendelea Kuimarisha Ushirikiano Katika Maendeleo ya Taifa",
+image: "images/community-development.jpg",
+date: "Julai 2026",
+author: "Dorica Ngaleni",
+location: "Tanzania",
+summary: "Ushirikiano wa wananchi unaendelea kuwa msingi muhimu katika kutatua changamoto za kijamii.",
+content: "Jamii mbalimbali zimeendelea kushirikiana katika miradi ya maendeleo na kusaidiana kutatua changamoto zinazowakabili.\n\nUshirikiano huu umeonyesha umuhimu wa nguvu ya pamoja katika kujenga taifa.",
+source: "DorryHabariSphere"
+  }
