@@ -190,7 +190,7 @@ const container = document.getElementById("category-news");
 
 const filteredNews = newsDatabase.filter(news =>
 
-news.category === category
+news.category.includes(category)
 
 );
 
