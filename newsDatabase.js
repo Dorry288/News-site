@@ -156,7 +156,7 @@ SOURCE: Tume Huru ya Taifa ya Uchaguzi (INEC)
 
 }
 
-];
+
 // NEWS ID 5
 
 {
@@ -317,7 +317,8 @@ SOURCE: BASATA / Wizara ya Utamaduni, Sanaa na Michezo
 
 `
 
-}
+},
+
 // NEWS ID 9
 
 {
