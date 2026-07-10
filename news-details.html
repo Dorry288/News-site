@@ -215,111 +215,86 @@ Dorry<span>HabariSphere</span>
 
 document.addEventListener("DOMContentLoaded",()=>{
 
-
 const article = document.getElementById("article-content");
+const trending = document.getElementById("trending-container");
 
-
-
-const urlParams = new URLSearchParams(window.location.search);
-
-
-const id = Number(urlParams.get("id"));
-
-
+const params = new URLSearchParams(window.location.search);
+const id = Number(params.get("id"));
 
 const news = newsDatabase.find(item => item.id === id);
 
 
-
 if(news){
-
-
-
-document.title = news.title;
-
-
 
 article.innerHTML = `
 
-
-<img src="${news.image}"
-class="img-fluid rounded mb-4"
-alt="${news.title}">
-
+<img src="${news.image}" class="img-fluid rounded mb-4">
 
 
 <span class="category-badge">
-
 ${news.category}
-
 </span>
 
 
-
 <h1 class="mt-3">
-
 ${news.title}
-
 </h1>
 
 
-
-<div class="news-meta mb-3">
-
-📅 ${news.date} 
-|
-📍 ${news.location}
-|
+<div class="news-meta">
+📅 ${news.date} |
+📍 ${news.location} |
 👤 ${news.author}
-
 </div>
 
 
+<hr>
 
 
-<p class="lead">
-
+<p class="news-preview">
 ${news.summary}
-
 </p>
-
-
 
 
 <div class="article-body">
-
 ${news.content.replace(/\n/g,"<br><br>")}
-
 </div>
 
 
+<hr>
 
-<p class="mt-4">
 
+<p>
 <strong>Source:</strong> ${news.source}
-
 </p>
-
-
-`;
-
-
-
-}else{
-
-
-article.innerHTML = `
-
-<h2>
-
-Habari haijapatikana
-
-</h2>
 
 `;
 
 }
 
+
+// Trending stories
+
+newsDatabase.slice(0,5).forEach(item=>{
+
+trending.innerHTML += `
+
+<a href="news-details.html?id=${item.id}" 
+class="sidebar-list-item">
+
+<div class="sidebar-item-title">
+${item.title}
+</div>
+
+<div class="sidebar-item-meta">
+${item.category}
+</div>
+
+</a>
+
+`;
+
+});
 
 
 });
