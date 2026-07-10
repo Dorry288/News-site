@@ -3,113 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soma Habari - DorryHabari Sphere</title>
+    <title>Soma Habari - DorryHabariSphere</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .bg-deep-blue { background-color: #002244 !important; }
+        .text-deep-blue { color: #002244 !important; }
+        .badge-deep-blue { background-color: #002244 !important; color: #ffffff; }
+        .logo-box { background-color: #002244; padding: 6px 15px; border-radius: 6px; display: inline-block; }
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <header class="site-header shadow-sm">
-        <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between">
+    <header class="site-header shadow-sm bg-white">
+        <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between py-3">
             <div>
-                <a href="index.html" class="site-logo">DorryHabari <span>Sphere</span></a>
-                <p class="site-tagline">Reliable News, Stories and Updates</p>
+                <a href="index.html" class="text-decoration-none fw-bold fs-2 logo-box">
+                    <span style="color: #ffffff;">DorryHabari</span><span style="color: #FF6600;">Sphere</span>
+                </a>
+                <p class="site-tagline text-muted small mb-0 mt-1">Reliable News, Stories and Updates</p>
             </div>
             <div class="text-muted small mt-2 mt-md-0">
-                <i class="bi bi-clock"></i> <span>Alhamisi, 9 Julai 2026</span>
+                <i class="bi bi-clock-history text-primary"></i> <span>Ijumaa, 10 Julai 2026</span>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow bg-deep-blue">
         <div class="container">
-            <button class="navbar-toggler ms-auto my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav w-100 justify-content-between text-uppercase">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">National</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Politics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Business</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Technology</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Sports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Entertainment</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Health</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Society</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <ul class="navbar-nav w-100 justify-content-between text-uppercase fw-semibold py-2 py-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">National</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Business</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Entertainment</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="breaking-box d-flex align-items-center shadow-sm">
-        <div class="breaking-title px-4 py-2">Breaking&nbsp;News</div>
-        <div class="ticker-wrap flex-grow-1 py-2">
-            <div class="ticker-content">
-                Latest updates from Tanzania and around the world. | Dorica Ngaleni edits portal sections seamlessly. | Stay tuned for credible news reportage.
-            </div>
-        </div>
-    </div>
-
-    <main class="container my-5">
-        <div class="row g-4">
-            
-            <div class="col-lg-8">
-                <div class="bg-white p-4 rounded shadow-sm" id="news-details-content">
-                    </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="d-flex flex-column gap-4">
-                    <div class="sidebar-widget shadow-sm">
-                        <h3 class="widget-title">Trending Stories</h3>
-                        <div id="sidebar-trending"></div>
-                    </div>
-                    <div class="sidebar-widget shadow-sm">
-                        <h3 class="widget-title">Most Read</h3>
-                        <div id="sidebar-mostread"></div>
-                    </div>
-                    <div class="sidebar-widget shadow-sm">
-                        <h3 class="widget-title">Habari Nyingine</h3>
-                        <div id="sidebar-other"></div>
-                    </div>
+    <main class="container my-5 flex-grow-1">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-10">
+                <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+                    <span class="badge mb-2 badge-deep-blue">Kitaifa</span>
+                    <h2 class="fw-bold mb-3 text-deep-blue">Mapinduzi ya Kidijitali na Ustawi wa Miundombinu Nchini Tanzania</h2>
+                    <p class="text-muted small mb-4"><i class="bi bi-calendar-event"></i> Imechapishwa: Julai 10, 2026 | <i class="bi bi-pencil-square"></i> Na Mwandishi Wetu</p>
+                    
+                    <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded mb-4 shadow-sm" alt="Tanzania Infrastructure" style="width: 100%; height: 400px; object-fit: cover;">
+                    
+                    <p class="text-secondary" style="line-height: 1.9; text-align: justify; font-size: 16px;">
+                        Ulimwengu wa habari na utoaji taarifa unabadilika kwa kasi kubwa sana nchini Tanzania na ukanda mzima wa Afrika Mashariki. Kupitia mifumo ya kijidijitali na upatikanaji wa intaneti ya kasi, jamii inapata fursa ya kujipenyeza na kupokea habari kwa usahihi wa kiwango cha juu kuliko ilivyokuwa miaka kadhaa iliyopita.
+                    </p>
+                    <p class="text-secondary" style="line-height: 1.9; text-align: justify; font-size: 16px;">
+                        Wataalamu vya mifumo ya mawasiliano na multimedia wanaeleza kuwa ukuaji huu unachochea uwazi na uwajibikaji kwenye nyanja mbalimbali za kijamii, kiuchumi, na maendeleo ya nchi kwa ujumla.
+                    </p>
                 </div>
             </div>
-
         </div>
     </main>
 
-    <footer class="site-footer pt-4 pb-3 mt-auto">
+    <footer class="pt-5 pb-4 mt-auto bg-deep-blue" style="color: #ffffff;">
         <div class="container">
-            <div class="row g-4 justify-content-between align-items-center">
-                <div class="col-md-4 text-center text-md-start">
-                    <a href="index.html" class="footer-logo">DorryHabari <span>Sphere</span></a>
-                    <p class="small text-muted mt-2">Portal kubwa ya kidijitali inayotoa habari za ukweli na za uhakika kila wakati nchini Tanzania.</p>
+            <div class="row g-4">
+                <div class="col-md-5 text-center text-md-start">
+                    <a href="index.html" class="text-decoration-none fw-bold fs-3 text-white">DorryHabari<span style="color: #FF6600;">Sphere</span></a>
+                    <p class="small text-white-50 mt-2">Portal kubwa na madhubuti ya kidijitali inayotoa habari za ukweli, uchambuzi wa kina na updates za uhakika kila wakati nchini Tanzania.</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mx-2"><a href="about.html">About Us</a></li>
-                        <li class="list-inline-item mx-2"><a href="contact.html">Contact Us</a></li>
+                <div class="col-md-3 text-center">
+                    <h5 class="fw-bold mb-3 text-white" style="border-bottom: 2px solid #FF6600; display: inline-block; padding-bottom: 5px;">Kurasa</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center text-md-end">
-                    <div class="fs-4 d-flex gap-3 justify-content-center justify-content-md-end mb-2">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    <h5 class="fw-bold mb-3 text-white" style="border-bottom: 2px solid #FF6600; display: inline-block; padding-bottom: 5px;">Tufuate Mitandaoni</h5>
+                    <div class="fs-4 mb-3 d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white-50"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
                     </div>
-                    <p class="small text-muted mb-0">&copy; 2026 DorryHabariSphere | Designed by Dorica Ngaleni | All Rights Reserved.</p>
+                    <p class="small text-white-50 mb-0">&copy; 2026 DorryHabariSphere. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
