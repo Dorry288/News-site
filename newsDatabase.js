@@ -154,7 +154,7 @@ SOURCE: Tume Huru ya Taifa ya Uchaguzi (INEC)
 
 `
 
-}
+},
 
 
 // NEWS ID 5
