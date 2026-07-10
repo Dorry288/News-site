@@ -438,7 +438,7 @@ SOURCE: Wizara ya Mawasiliano na Teknolojia ya Habari / TCRA
 
 `
 
-}
+},
 
 // NEWS ID 12
 
