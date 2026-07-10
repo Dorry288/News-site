@@ -7,128 +7,127 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .bg-deep-blue { background-color: #002244 !important; }
+        .text-deep-blue { color: #002244 !important; }
+        .border-deep-blue { border-color: #002244 !important; }
+        .logo-box { background-color: #002244; padding: 6px 15px; border-radius: 6px; display: inline-block; }
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <header class="site-header shadow-sm">
-        <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between">
+    <header class="site-header shadow-sm bg-white">
+        <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between py-3">
             <div>
-                <a href="index.html" class="site-logo">DorryHabari <span>Sphere</span></a>
-                <p class="site-tagline">Reliable News, Stories and Updates</p>
+                <a href="index.html" class="text-decoration-none fw-bold fs-2 logo-box">
+                    <span style="color: #ffffff;">DorryHabari</span><span style="color: #FF6600;">Sphere</span>
+                </a>
+                <p class="site-tagline text-muted small mb-0 mt-1">Reliable News, Stories and Updates</p>
             </div>
             <div class="text-muted small mt-2 mt-md-0">
-                <i class="bi bi-clock"></i> <span>Alhamisi, 9 Julai 2026</span>
+                <i class="bi bi-clock-history text-primary"></i> <span>Ijumaa, 10 Julai 2026</span>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow bg-deep-blue">
         <div class="container">
-            <button class="navbar-toggler ms-auto my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav w-100 justify-content-between text-uppercase">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">National</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Politics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Business</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Technology</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Sports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Entertainment</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Health</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Society</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Education</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <ul class="navbar-nav w-100 justify-content-between text-uppercase fw-semibold py-2 py-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">National</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Business</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Entertainment</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="about.html" style="border-bottom: 2px solid #FF6600;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <div class="row g-4">
-            
-            <div class="col-lg-8">
-                <div class="bg-white p-4 rounded shadow-sm">
-                    <h2 class="fw-bold mb-4 text-dark border-bottom pb-2" style="border-bottom-color: #ff6600 !important;">Kuhusu Sisi</h2>
+    <main class="container my-5 flex-grow-1">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-10">
+                <div class="bg-white p-4 p-md-5 rounded shadow-sm border-top border-5 border-deep-blue">
+                    <h2 class="fw-bold mb-4 text-dark border-bottom pb-2" style="border-bottom-color: #FF6600 !important;">Kuhusu DorryHabari Sphere</h2>
                     
-                    <p class="fs-5 text-secondary mb-4" style="text-align: justify;">
-                        <strong>DorryHabariSphere</strong> ni jukwaa la kipekee la habari linalotoa taarifa mbalimbali kuhusu Tanzania na dunia.
+                    <p class="text-secondary fs-5 mb-4" style="text-align: justify; line-height: 1.8;">
+                        <strong>DorryHabari Sphere</strong> ni jukwaa la kidijitali linaloongoza katika kutoa habari za uhakika, matukio ya wakati na uchambuzi wa kina nchini Tanzania na kote duniani. Jukwaa hili limeanzishwa likiwa na lengo kuu la kuziba pengo la taarifa kwa jamii kwa kuwasilisha habari kupitia mifumo ya kisasa ya kisanduku cha multimedia na uandishi wa weledi wa hali ya juu.
                     </p>
 
-                    <h4 class="fw-bold text-primary mt-4 mb-3" style="color: #0056b3 !important;">Sekta Zinazohusika</h4>
-                    <div class="row mb-4">
+                    <h4 class="fw-bold mt-4 mb-3 text-deep-blue"><i class="bi bi-bullseye text-danger me-2"></i>Lengo Letu</h4>
+                    <p class="text-secondary mb-4" style="text-align: justify; line-height: 1.7;">
+                        Lengo letu kubwa ni kuwa chanzo kikuu na cha kuaminika cha habari mtandaoni ambacho jamii, wadau na taasisi mbalimbali wanaweza kukitegemea kupata ukweli bila upendeleo wala upotoshaji. Tunalenga kuelimisha, kuburudisha na kukuza uelewa wa masuala mbalimbali ya kijamii na maendeleo.
+                    </p>
+
+                    <h4 class="fw-bold mb-3 text-deep-blue"><i class="bi bi-grid-fill text-warning me-2"></i>Aina za Habari Zinazopatikana</h4>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4"><div class="p-3 bg-light rounded shadow-sm border-start border-3 border-primary"><strong>National & Politics</strong></div></div>
+                        <div class="col-md-4"><div class="p-3 bg-light rounded shadow-sm border-start border-3 border-success"><strong>Business & Tech</strong></div></div>
+                        <div class="col-md-4"><div class="p-3 bg-light rounded shadow-sm border-start border-3 border-warning"><strong>Sports & Entertainment</strong></div></div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="row g-4 mb-4">
                         <div class="col-md-6">
-                            <ul class="list-group list-group-flush fw-semibold">
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> National News</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Politics</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Business</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Technology</li>
-                            </ul>
+                            <div class="p-4 rounded-3 text-white h-100 shadow-sm bg-deep-blue">
+                                <h4 class="fw-bold mb-3"><i class="bi bi-eye-fill me-2"></i>Vision (Dira)</h4>
+                                <p class="mb-0" style="font-size: 15px; line-height: 1.6; opacity: 0.9;">Kuwa jukwaa la mfano la uandishi wa habari za kidijitali nchini Tanzania linaloheshimika kwa kutoa taarifa zenye ukweli, tija na zilizofanyiwa utafiti wa kina ili kuleta mabadiliko chanya kwenye jamii wetu.</p>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <ul class="list-group list-group-flush fw-semibold">
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Sports</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Entertainment</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Health</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Society</li>
-                                <li class="list-group-item text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Education</li>
-                            </ul>
+                            <div class="p-4 rounded-3 text-white h-100 shadow-sm" style="background-color: #FF6600;">
+                                <h4 class="fw-bold mb-3"><i class="bi bi-rocket-takeoff-fill me-2"></i>Mission (Misioni)</h4>
+                                <p class="mb-0" style="font-size: 15px; line-height: 1.6; opacity: 0.9;">Kuhakikisha kila mwananchi anafikiwa na habari sahihi kwa wakati sahihi kupitia mifumo rafiki ya kiteknolojia, kukuza maadili ya uandishi wa habari, na kutoa fursa kwa sauti za jamii kusikika kwa uwazi.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <h4 class="fw-bold text-primary mb-3" style="color: #0056b3 !important;">Lengo letu:</h4>
-                    <p class="text-secondary fs-6 mb-4">
-                        Kutoa habari sahihi, za wakati na zenye kusaidia jamii kupata taarifa muhimu.
-                    </p>
-
-                    <div class="p-3 bg-light rounded border-start border-4 border-warning mt-4">
-                        <h5 class="fw-bold mb-1 text-dark">Mmiliki / Mwandishi:</h5>
-                        <p class="mb-0 fw-semibold text-secondary"><i class="bi bi-patch-check-fill text-primary"></i> Dorica Ngaleni</p>
+                    <div class="p-4 bg-light rounded-3 border-start border-5 border-primary mt-4">
+                        <h5 class="fw-bold mb-2 text-dark"><i class="bi bi-person-badge-fill text-primary me-2"></i>Mwandishi na Mwanzilishi Mkuu:</h5>
+                        <p class="mb-0 fw-bold text-secondary fs-5" style="letter-spacing: 0.5px;">Dorica Ngaleni</p>
+                        <p class="text-muted small mb-0 mt-1">Professional Digital Journalist & Multimedia Content Creator</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4">
-                <div class="d-flex flex-column gap-4">
-                    <div class="sidebar-widget shadow-sm">
-                        <h3 class="widget-title">Trending Stories</h3>
-                        <div id="sidebar-trending"></div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
 
-    <footer class="site-footer pt-4 pb-3 mt-auto">
+    <footer class="pt-5 pb-4 mt-auto bg-deep-blue" style="color: #ffffff;">
         <div class="container">
-            <div class="row g-4 justify-content-between align-items-center">
-                <div class="col-md-4 text-center text-md-start">
-                    <a href="index.html" class="footer-logo">DorryHabari <span>Sphere</span></a>
-                    <p class="small text-muted mt-2">Portal kubwa ya kidijitali inayotoa habari za ukweli na za uhakika kila wakati nchini Tanzania.</p>
+            <div class="row g-4">
+                <div class="col-md-5 text-center text-md-start">
+                    <a href="index.html" class="text-decoration-none fw-bold fs-3 text-white">DorryHabari<span style="color: #FF6600;">Sphere</span></a>
+                    <p class="small text-white-50 mt-2">Portal kubwa na madhubuti ya kidijitali inayotoa habari za ukweli, uchambuzi wa kina na updates za uhakika kila wakati nchini Tanzania.</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mx-2"><a href="about.html">About Us</a></li>
-                        <li class="list-inline-item mx-2"><a href="contact.html">Contact Us</a></li>
+                <div class="col-md-3 text-center">
+                    <h5 class="fw-bold mb-3 text-white" style="border-bottom: 2px solid #FF6600; display: inline-block; padding-bottom: 5px;">Kurasa</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center text-md-end">
-                    <div class="fs-4 d-flex gap-3 justify-content-center justify-content-md-end mb-2">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    <h5 class="fw-bold mb-3 text-white" style="border-bottom: 2px solid #FF6600; display: inline-block; padding-bottom: 5px;">Tufuate Mitandaoni</h5>
+                    <div class="fs-4 mb-3 d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white-50"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
                     </div>
-                    <p class="small text-muted mb-0">&copy; 2026 DorryHabariSphere | Designed by Dorica Ngaleni | All Rights Reserved.</p>
+                    <p class="small text-white-50 mb-0">&copy; 2026 DorryHabariSphere. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
