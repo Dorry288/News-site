@@ -440,8 +440,6 @@ SOURCE: Wizara ya Mawasiliano na Teknolojia ya Habari / TCRA
 
 }
 
-];
-
 // NEWS ID 12
 
 {
@@ -681,3 +679,4 @@ summary: "Ushirikiano wa wananchi unaendelea kuwa msingi muhimu katika kutatua c
 content: "Jamii mbalimbali zimeendelea kushirikiana katika miradi ya maendeleo na kusaidiana kutatua changamoto zinazowakabili.\n\nUshirikiano huu umeonyesha umuhimu wa nguvu ya pamoja katika kujenga taifa.",
 source: "DorryHabariSphere"
   }
+  ]:
