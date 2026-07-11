@@ -93,7 +93,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "digital-government.jpg",
+image: "digital-payment.jpg",
 
 summary:
 "Serikali imeendelea kuboresha mifumo ya kidijitali ili kurahisisha upatikanaji wa huduma mbalimbali kwa wananchi.",
