@@ -93,7 +93,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/digital-government.jpg",
+image: "digital-government.jpg",
 
 summary:
 "Serikali imeendelea kuboresha mifumo ya kidijitali ili kurahisisha upatikanaji wa huduma mbalimbali kwa wananchi.",
@@ -132,7 +132,7 @@ location: "Dodoma, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/election-process.jpg",
+image: "election-process.jpg",
 
 summary:
 "Taasisi mbalimbali zimeendelea na maandalizi kuhakikisha mchakato wa uchaguzi unafanyika kwa amani na kuzingatia sheria.",
@@ -172,7 +172,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/tff-digital-system.jpg",
+image: "tff-digital-system.jpg",
 
 summary:
 "Shirikisho la Mpira wa Miguu Tanzania (TFF) limezindua mfumo mpya wa kidijitali utakaosaidia usimamizi wa Ligi Kuu Tanzania Bara.",
@@ -213,7 +213,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/digital-health.jpg",
+image: "digital-health.jpg",
 
 summary:
 "Matumizi ya teknolojia katika sekta ya afya yameendelea kusaidia kuboresha huduma kwa wagonjwa na usimamizi wa taarifa.",
@@ -254,7 +254,7 @@ location: "Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/digital-education.jpg",
+image: "digital-education.jpg",
 
 summary:
 "Vyuo mbalimbali vimeendelea kutumia teknolojia katika ufundishaji na ujifunzaji ili kuongeza upatikanaji wa elimu.",
@@ -295,7 +295,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/tanzania-entertainment.jpg",
+image: "tanzania-entertainment.jpg",
 
 summary:
 "Sekta ya burudani imeendelea kukua kutokana na ubunifu wa wasanii na matumizi ya teknolojia.",
@@ -334,7 +334,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/financial-sector.jpg",
+image: "financial-sector.jpg",
 
 summary:
 "Benki Kuu ya Tanzania imeendelea kusimamia mifumo ya fedha na kuongeza upatikanaji wa huduma za kifedha kwa wananchi.",
@@ -375,7 +375,7 @@ location: "Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/community-development.jpg",
+image: "community-development.jpg",
 
 summary:
 "Wadau mbalimbali wameendelea kusisitiza umuhimu wa ushirikiano wa jamii katika kutatua changamoto za maendeleo.",
@@ -416,7 +416,7 @@ location: "Dodoma / Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/cybersecurity-ai.jpg",
+image: "cybersecurity-ai.jpg",
 
 summary:
 "Ukuaji wa teknolojia umeongeza umuhimu wa usalama wa taarifa na matumizi salama ya Akili Bandia nchini Tanzania.",
@@ -446,7 +446,7 @@ SOURCE: Wizara ya Mawasiliano na Teknolojia ya Habari / TCRA
 id: 12,
 category: "Business and development",
 title: "Startup Centers Tanzania Zawapa Vijana Fursa za Kuanzisha Biashara",
-image: "images/startup-center.jpg",
+image: "startup-center.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -461,7 +461,7 @@ source: "DorryHabariSphere"
 id: 13,
 category: "Business and development",
 title: "Utalii Tanzania Wafungua Fursa Mpya za Uwekezaji na Ajira kwa Vijana",
-image: "images/tourism-tanzania.jpg",
+image: "tourism-tanzania.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -476,7 +476,7 @@ source: "DorryHabariSphere"
 id: 14,
 category: "Business and development",
 title: "Biashara Ndogo Zanufaika na Mifumo ya Kidijitali ya Malipo",
-image: "images/digital-payment.jpg",
+image: "digital-payment.jpg",
 date: "Juni 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -491,7 +491,7 @@ source: "DorryHabariSphere"
 id: 15,
 category: "Technology",
 title: "Matumizi ya AI Yabadilisha Namna Taasisi na Jamii Zinavyofanya Kazi",
-image: "images/artificial-intelligence.jpg",
+image: "artificial-intelligence.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -506,7 +506,7 @@ source: "DorryHabariSphere"
 id: 16,
 category: "Technology",
 title: "Jamii Zashirikiana Zaidi Kupitia Teknolojia za Mawasiliano",
-image: "images/community-technology.jpg",
+image: "community-technology.jpg",
 date: "Juni 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -521,7 +521,7 @@ source: "DorryHabariSphere"
 id: 17,
 category: "Technology",
 title: "Teknolojia Yasaidia Wakulima Kuongeza Uzalishaji wa Mazao",
-image: "images/smart-farming.jpg",
+image: "smart-farming.jpg",
 date: "Mei 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -536,7 +536,7 @@ source: "DorryHabariSphere"
 id: 18,
 category: "Entertainment",
 title: "Burudani ya Kidijitali Yawapa Wasanii Fursa Mpya za Kufikia Mashabiki",
-image: "images/digital-entertainment.jpg",
+image: "digital-entertainment.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -551,7 +551,7 @@ source: "DorryHabariSphere"
 id: 19,
 category: "Entertainment",
 title: "Mitandao ya Kijamii Yabadilisha Sekta ya Burudani Tanzania",
-image: "images/social-media-entertainment.jpg",
+image: "social-media-entertainment.jpg",
 date: "Juni 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -566,7 +566,7 @@ source: "DorryHabariSphere"
 id: 20,
 category: "Entertainment",
 title: "Wasanii Vijana Watumia Teknolojia Kujenga Ajira Kupitia Vipaji",
-image: "images/young-artists.jpg",
+image: "young-artists.jpg",
 date: "Mei 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -581,7 +581,7 @@ source: "DorryHabariSphere"
 id: 21,
 category: "Sports",
 title: "Wanariadha Tanzania Waendelea Kujiandaa kwa Mashindano ya Kimataifa",
-image: "images/athletes-tanzania.jpg",
+image: "athletes-tanzania.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -596,7 +596,7 @@ source: "DorryHabariSphere"
 id: 22,
 category: "Sports",
 title: "Programu za Michezo ya Vijana Zasaidia Kugundua Vipaji Vipya",
-image: "images/youth-sports.jpg",
+image: "youth-sports.jpg",
 date: "Juni 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -611,7 +611,7 @@ source: "DorryHabariSphere"
 id: 23,
 category: "Sports",
 title: "Teknolojia Yaanza Kuboresha Mafunzo na Ufuatiliaji wa Michezo",
-image: "images/sports-technology.jpg",
+image: "sports-technology.jpg",
 date: "Mei 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -626,7 +626,7 @@ source: "DorryHabariSphere"
 id: 24,
 category: "Health",
 title: "Teknolojia Yarahisisha Upatikanaji wa Huduma za Afya Tanzania",
-image: "images/digital-health.jpg",
+image: "digital-health.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -641,7 +641,7 @@ source: "DorryHabariSphere"
 id: 25,
 category: "Health",
 title: "Jamii Yahimizwa Kuzingatia Lishe Bora kwa Afya Imara",
-image: "images/healthy-food.jpg",
+image: "healthy-food.jpg",
 date: "Juni 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -656,7 +656,7 @@ source: "DorryHabariSphere"
 id: 26,
 category: "Health",
 title: "Huduma za Afya Mtandaoni Zazidi Kupata Umaarufu Tanzania",
-image: "images/mobile-health.jpg",
+image: "mobile-health.jpg",
 date: "Mei 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
@@ -671,7 +671,7 @@ source: "DorryHabariSphere"
 id: 27,
 category: "National",
 title: "Jamii Zaendelea Kuimarisha Ushirikiano Katika Maendeleo ya Taifa",
-image: "images/national-development.jpg",
+image: "national-development.jpg",
 date: "Julai 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
