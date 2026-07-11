@@ -596,7 +596,7 @@ source: "DorryHabariSphere"
 id: 22,
 category: "Sports",
 title: "Programu za Michezo ya Vijana Zasaidia Kugundua Vipaji Vipya",
-image: "youth-sports.jpg",
+image: "sports.jpg",
 date: "Juni 2026",
 author: "Dorica Ngaleni",
 location: "Tanzania",
