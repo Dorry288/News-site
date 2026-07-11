@@ -13,7 +13,7 @@ location: "Viwanja vya Mwalimu Julius Nyerere, Dar es Salaam",
 
 author: "Dorica Ngaleni",
 
-image: "images/sabasaba.jpg",
+image: "sabasaba.jpg",
 
 summary:
 "Maonesho ya Kimataifa ya Biashara Dar es Salaam (Sabasaba) yameendelea kuwa jukwaa muhimu la kukuza biashara, uwekezaji na kuunganisha wafanyabiashara ndani na nje ya nchi.",
