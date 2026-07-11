@@ -54,7 +54,7 @@ location: "Dar es Salaam, Tanzania",
 
 author: "Dorica Ngaleni",
 
-image: "images/samia-regional.jpg",
+image: "samia-regional.jpg",
 
 summary:
 "Tanzania imeendelea kuimarisha ushirikiano wa kikanda kwa lengo la kukuza biashara, uwekezaji na maendeleo ya kiuchumi.",
